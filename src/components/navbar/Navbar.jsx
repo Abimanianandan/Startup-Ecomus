@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav   className={`navbar navbar-expand-lg fixed-top ${
+      <nav   className={`navbar navbar-expand-lg sticky-top ${
         scrolled ? "bg-body-terminary" : ""
       }`}>
         <div className="container-fluid">

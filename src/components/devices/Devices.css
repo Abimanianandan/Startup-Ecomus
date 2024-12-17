@@ -26,6 +26,26 @@
     overflow-x: hidden;
     overflow-y: hidden;
   } 
+  .cart-icon{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    width: 35px;
+    opacity: 0;
+  }
+  .card:hover{
+    .cart-icon{
+      opacity: 1;
+    }
+  }
+  .cart-icon:hover{
+    background-color: black;
+    .fa-cart-plus{
+      color: white !important;
+    }
+  }
+ 
   @media only screen and (max-width: 600px){
     .col-md-2{
         display: flex;

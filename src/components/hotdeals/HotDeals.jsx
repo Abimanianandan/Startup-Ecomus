@@ -5,7 +5,7 @@ import image1 from '../hotdeals/hotdealsimgs/bark-phone-blue.jpg'
 const HotDeals = () => {
   return(
     <>
-  <div class="row row-cols-1 row-cols-md-4 g-0">
+  <div class="row row-cols-1 row-cols-md-4 g-4 mt-5">
   <div class="col">
     <div class="card">
     <img src={image1} class="card-img-top" alt="..."/>
