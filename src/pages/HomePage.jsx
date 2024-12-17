@@ -1,17 +1,22 @@
 import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import Carousel from '../components/carousel/Carousel'
+import Benifits from '../components/Benifits/Benifits'
+import Review from '../components/review/Review'
+import Devices from '../components/devices/Devices'
+import Footer from '../components/footer/Footer'
+import CompanyLogo from '../components/company-logo/CompanyLogo'
 
 const HomePage = () => {
   return (
     <>
-<<<<<<< HEAD
       <Navbar />
       <Carousel />
-=======
-    <div>HomePage</div>
-    <h1>Hello world</h1>
->>>>>>> 22bc7436c899f84979ea4384c46cd296baa5c354
+      <Benifits />
+      <Review />
+      <CompanyLogo />
+      <Devices />
+      <Footer />
     </>
   )
 }

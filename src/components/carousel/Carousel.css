@@ -1,43 +1,51 @@
 .custom-caption {
+  position: absolute;
+  top: 40px ;
+  left: 50%; 
+  transform: translate (-50%) ; 
+  text-align: center;
+  color: black !important; 
+}
+
+.carousel-caption h2, .carousel-caption p {
+  margin: 0;
+  padding: 0; 
+  opacity: 1;
+}
+.carousel-caption h2{
+  font-size: 80px !important;
+}
+.carousel-caption p{
+  font-size: 20px !important;
+}
+.carousel-indicators .active{
+  background-color: black !important;
+}
+
+
+@media only screen and (max-width:600px){
+  .w-100{
+      height: 450px !important;
+      object-fit:cover;
+  }
+  .carousel-img{
+    margin-top: 50px;
+  }
+  .custom-caption {
     position: absolute;
-    top: 100px ;
-    left: 20%; 
+    top: 200px ;
+    left: 50%; 
     transform: translate (-50%) ; 
     text-align: center;
-    color: white !important; 
-  }
-  
-  .carousel-caption h2, .carousel-caption p {
-    margin: 0;
-    padding: 0; 
-    opacity: 1;
+    color: black !important; 
   }
   .carousel-caption h2{
-    font-size: 70px !important;
+      font-size: 30px !important;
+      margin-top: -150px !important;
   }
   .carousel-caption p{
-    font-size: 20px !important;
+      display: none;
   }
-  .carousel-indicators .active{
-    background-color: black !important;
-  }
+}
 
-  
-  @media only screen and (max-width:600px){
-    .w-100{
-        height: 450px !important;
-        object-fit:cover;
-    }
-    .carousel-img{
-      margin-top: 50px;
-    }
-    .carousel-caption h2{
-        font-size: 30px !important;
-        margin-top: -150px !important;
-    }
-    .carousel-caption p{
-        display: none;
-    }
-  }
-  
 

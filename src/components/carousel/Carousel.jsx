@@ -1,24 +1,29 @@
+
 import React from "react";
 import "../carousel/Carousel.css";
+import PhoneImage from "../../assets/images/phone.png"
+import ChargeImage from "../../assets/images/charge.png"
+import HeadPhoneImage from "../../assets/images/headphone.png"
+import Button from "../button/Button";
 
 const slides = [
   {
-    src: "https://static.dribbble.com/users/90631/screenshots/6356787/asterial_dribble3.png",
-    alt: "Skincare Slide 1",
+    src: PhoneImage,
+    alt: "Phone Slide",
     title: "Mix. Match. MagSafe.",
     description: "Snap on a case, wallet, wireless charger, or battery pack.",
   },
   {
-    src: "https://demo-ecomus-global2.myshopify.com/cdn/shop/files/skincare_slide2.jpg?v=1706156130&width=1800",
-    alt: "Skincare Slide 2",
-    title: "Beauty in Every Drop",
-    description: "Indulge in the luxury of flawless skin",
+    src: ChargeImage,
+    alt: "Charge Slide ",
+    title: "Ecomus Docking",
+    description: "Fast wireless charging on-the-go.",
   },
   {
-    src: "https://demo-ecomus-global2.myshopify.com/cdn/shop/files/skincare_slide3.jpg?v=1706156130&width=1800",
-    alt: "Skincare Slide 3",
-    title: "Skin Love, Unleashed",
-    description: "Experience the magic of self-care with our premium skincare",
+    src: HeadPhoneImage,
+    alt: "Headphone Slide ",
+    title: "Accessory Sale",
+    description: "Up to 40% off chargers, earbuds, and more.",
   },
 ];
 
@@ -46,13 +51,13 @@ const Carousel = () => {
             <img
               src={slide.src}
               alt={slide.alt}
-              className="d-block w-100 carousel-img justify-content-center"
+              className="d-block w-100 carousel-img"
               loading="lazy"
             />
             <div className="carousel-caption custom-caption">
               <h2 className="col-md-12 fw-normal">{slide.title}</h2>
-              <p className="mt-4">{slide.description}</p>
-              <button className="btn btn-outline-dark p-3 rounded-pill w-25 mt-5">Shop Collection <i className="fa-solid fa-arrow-right ms-3"></i></button>
+              <p className="mt-2">{slide.description}</p>
+              <Button />
             </div>
           </div>
         ))}

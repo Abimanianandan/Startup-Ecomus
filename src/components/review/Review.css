@@ -1,0 +1,43 @@
+.cold:hover{
+    cursor: pointer;
+    color: red !important;
+  }
+  .review{
+    height: 700px !important;
+  }
+  
+  .fa-star {
+    font-size: 1.2rem;
+  }
+  .image-container{
+   overflow: hidden;
+   border: none;
+  }
+  .image-container img {
+    transition: transform 1.5s ease; 
+  }
+   .image-container img:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+  }
+  .main-img{
+    width: 400px !important;
+  }
+  
+  .fa-code-compare:hover{
+    color: red;
+  }
+  @media only screen and (max-width:600px){
+    .review{
+        height: 800px !important;
+    }
+  }
+ 
+ 
+  
+
+  
+ 
+
+  
+  

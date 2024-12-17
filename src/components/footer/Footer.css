@@ -1,0 +1,8 @@
+i:hover{
+    cursor: pointer;
+    color: red !important;
+}
+.mb-2:hover{
+    cursor: pointer;
+    color: red;
+}
