@@ -9,7 +9,7 @@ const Categories = () => {
     <h1 className="display-4 display-sm-3 display-md-2 display-lg-1 text-center mt-5">Shop by category</h1>
 
         
-    <div class="main-container py-4 w-100 h-100">
+    <div class="main-container py-4 w-100 h-100 mt-5">
 
       {/* Sub Container */}
       <div class="sub-container container w-100 h-100   d-flex justify-content-center">

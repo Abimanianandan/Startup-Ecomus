@@ -20,7 +20,6 @@ const HomePage = () => {
       <HotDeals/>
       <Catagories/>
       <BestSeller/>
-      <HotDeals/>
       <Benifits />
       <Review />
       <CompanyLogo />

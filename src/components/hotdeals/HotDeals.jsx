@@ -13,7 +13,7 @@ const HotDeals = () => {
  
   <div className="hotdeals-container d-flex justify-content-center  mt-5">
 
-  <div class="row hotdeals-row row-cols-1 row-cols-md-4 g-4 mt-5 mt-3 d-flex justify-content-center">
+  <div class="row hotdeals-row row-cols-1 row-cols-md-4 g-0 mt-5 mt-3 d-flex justify-content-center">
     {/* card 1 */}
   <div class="col g-3 d-flex justify-content-center">
     <div class="card d-flex justify-content-center">
