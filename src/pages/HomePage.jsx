@@ -7,6 +7,8 @@ import Review from '../components/review/Review'
 import Devices from '../components/devices/Devices'
 import Footer from '../components/footer/Footer'
 import CompanyLogo from '../components/company-logo/CompanyLogo'
+import Catagories from '../components/catagories/Catagories'
+import BestSeller from '../components/bestseller/BestSeller'
 
 const HomePage = () => {
   return (
@@ -14,7 +16,8 @@ const HomePage = () => {
       <Navbar />
       <Carousel />
     <HotDeals/>
-  
+    <Catagories/>
+    <BestSeller/>
       <Benifits />
       <Review />
       <CompanyLogo />
