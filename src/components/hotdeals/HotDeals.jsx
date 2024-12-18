@@ -16,8 +16,15 @@ const HotDeals = () => {
   <div class="row hotdeals-row row-cols-1 row-cols-md-4 g-0 mt-5 mt-3 d-flex justify-content-center">
     {/* card 1 */}
   <div class="col g-3 d-flex justify-content-center">
-    <div class="card d-flex justify-content-center">
+    <div class="card cardimage d-flex justify-content-center">
     <img src={image1} class="card-img-top" alt="..."/>
+
+    {/* <div class="card-body text-centerone">
+    <img src='https://ecomusnext-themesflat.vercel.app/images/products/bark-phone-blue2.jpg' class="card-img-top" alt="..."/>
+    <i class="fa-solid fa-bag-shopping fa-xl" style={{color: "#000000"}}></i>
+      
+       </div>
+        */}
     <div class="card-body text-center">
       <h6 class='card-title'>Case with MagSafe</h6>
       <p class="card-text">$19.99

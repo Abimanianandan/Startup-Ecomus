@@ -20,6 +20,30 @@ transform: scale(1.1);
 
 }
 
+/* .cardimage{
+    position: relative;
+}
+.text-centerone{
+    position: absolute;
+  width: 100%;
+  height:auto;
+  
+  color: transparent !important ; 
+  
+  display: none;
+  transition: 1.1s;
+}
+.cardimage:hover .text-centerone img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.cardimage:hover .text-centerone{
+    display: block;
+    transform: scaley(0.9);
+} */
+
 
 @media only screen and (max-width:768px) {
     .card{
