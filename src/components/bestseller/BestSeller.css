@@ -17,6 +17,38 @@ background-color: rgb(244, 245, 245);
 .card img:hover{
 transform: scale(1.1);
 }
+.card{
+    overflow: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+
+}
+.card-img {
+    transition: transform 1.5s; 
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card:hover .b-one {
+    transform: scale(1.2) ; 
+    content: url("https://ecomusnext-themesflat.vercel.app/images/products/headphone-red.jpg");
+    cursor: pointer;
+}
+.card:hover .b-two {
+    transform: scale(1.2) ; 
+    cursor: pointer;
+}
+.card:hover .b-three {
+    transform: scale(1.2) ; 
+    content: url("https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-white3.jpg");
+    cursor: pointer;
+}
+.card:hover .b-four {
+    transform: scale(1.2) ; 
+    content: url("https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-white.jpg");
+    cursor: pointer;
+}
 
 
 @media only screen and (max-width:768px) {
