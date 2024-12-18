@@ -1,7 +1,8 @@
 .card{
     border: 1px solid transparent !important;
-width: 263px !important;
-height: 348px !important;
+    width: 263px !important;
+    height: 348px !important;
+    overflow: hidden;
 }
 
 .card-body{
@@ -15,15 +16,33 @@ background-color: rgb(244, 245, 245);
 }
 
 .card img:hover{
+cursor: pointer;    
 transform: scale(1.1);
 }
 
+  
+  .icons-container {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    visibility: hidden;
+     transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .card:hover .icons-container {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
 
 @media only screen and (max-width:768px) {
     .card{
         border: 1px solid transparent !important;
-    width: 243px !important;
-    height: 288px !important;
+        width: 243px !important;
+        height: 288px !important;
     }
 }
 
