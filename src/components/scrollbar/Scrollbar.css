@@ -1,0 +1,37 @@
+
+.offers-carousel {
+    width: 100%; 
+    overflow: hidden; 
+    background-color: black;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .offers-track {
+    display: inline-flex; 
+    animation: scroll-left 20s linear infinite; 
+  }
+  
+  .offer-item {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .offers-carousel:hover .offers-track {
+    cursor: pointer;
+    animation-play-state: paused;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-35%); 
+    }
+  }
+  
