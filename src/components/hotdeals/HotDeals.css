@@ -39,7 +39,7 @@ transform: scale(1.1);
   
   .container{
     overflow: "hidden";
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     overflow-Y: "hidden";
 }
 
@@ -75,6 +75,24 @@ transform: scale(1.1);
     content: url("https://ecomusnext-themesflat.vercel.app/images/products/albert-white.jpg");
     cursor: pointer;
 }
+.card:hover .five {
+    transform: scale(1.2) ; 
+    content: url("https://i5.walmartimages.com/asr/7da3d86a-16e4-40af-bf27-98d3669e6a66.d1c019872e308c4f94720407ea027ee3.jpeg");
+    cursor: pointer;
+}
+.card:hover .six {
+    transform: scale(1.2) ; 
+    content: url("https://tse4.mm.bing.net/th?id=OIP.ME7w8biTCoGCGAD20L1S6wHaHX&pid=Api&P=0&h=180");
+    cursor: pointer;
+}
+.arrow{
+    position:absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 150px;
+    left: 230px;
+    font-size: 24px;
+}
 
 @media only screen and (max-width:768px) {
     .card{
@@ -100,26 +118,9 @@ transform: scale(1.1);
 
 
 
-/* .card:hover .five {
-    transform: scale(1.1) ; 
-    content: url("https://demo-ecomus-global2.myshopify.com/cdn/shop/files/Frame258.jpg?v=1706772810&width=1646");
-    cursor: pointer;
-}
-.card:hover .six {
-    transform: scale(1.1) ; 
-    content: url("https://demo-ecomus-global2.myshopify.com/cdn/shop/files/Frame247_db48383b-129d-4387-902b-16f69eebc191.jpg?v=1706772563&width=1346");
-    cursor: pointer;
-}
-.card:hover .seven {
-    transform: scale(1.1) ; 
-    content: url("https://demo-ecomus-global2.myshopify.com/cdn/shop/files/Frame257.jpg?v=1706772675&width=1346");
-    cursor: pointer;
-}
-.card:hover .eight {
-    transform: scale(1.1) ; 
-    content: url("https://demo-ecomus-global2.myshopify.com/cdn/shop/files/Frame255.jpg?v=1706772623&width=1346");
-    cursor: pointer;
-}
+ 
+
+/*
 .arrow{
     position:absolute;
     margin: 0px;

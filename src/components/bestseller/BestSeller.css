@@ -49,7 +49,11 @@ transform: scale(1.1);
     content: url("https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-white.jpg");
     cursor: pointer;
 }
-
+.card:hover .b-five {
+    transform: scale(1.2) ; 
+    content: url("https://tse1.mm.bing.net/th?id=OIP.tt5jqcN5cn3iTYVh4v6vNgHaFj&pid=Api&P=0&h=180");
+    cursor: pointer;
+}
 
 @media only screen and (max-width:768px) {
     .card{
