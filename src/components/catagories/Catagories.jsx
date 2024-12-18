@@ -16,7 +16,7 @@ const Categories = () => {
         <div class="row g-4 w-100 h-100 justify-content-center" >
           {/* Card 1 */}
           <div class="col-md-6 col-12 d-flex justify-content-center" style={{ border: '1px solid red !important' }}>
-            <div class="card bg-dark text-grey w-100 h-100" >
+            <div class="card  text-grey w-100 h-100" >
               <img
                 src={speaker}
                 class="card-img"
@@ -33,7 +33,7 @@ const Categories = () => {
 
           {/* Card 2 */}
           <div class="col-md-6 col-12 d-flex justify-content-center">
-            <div class="card bg-dark text-grey  w-100 h-100" >
+            <div class="card  text-grey  w-100 h-100" >
               <img
                 src={headset}
                 class="card-img"
