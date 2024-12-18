@@ -13,11 +13,7 @@ const HotDeals = () => {
  
   <div className="hotdeals-container d-flex justify-content-center  mt-5">
 
-<<<<<<< HEAD
-  <div className="row hotdeals-row row-cols-1 row-cols-md-4 g-4 mt-5 mt-3 d-flex justify-content-center">
-=======
   <div class="row hotdeals-row row-cols-1 row-cols-md-4 g-0 mt-5 mt-3 d-flex justify-content-center">
->>>>>>> 5220c6743d1ea66e788ae4c68b33a965717de357
     {/* card 1 */}
   <div className="col g-3 d-flex justify-content-center">
     <div className="card d-flex justify-content-center position-relative">
@@ -94,9 +90,9 @@ const HotDeals = () => {
     </div>
   </div>  
 </div>
-  </div>
+  
    </div>
-
+</div>
   
 
   
