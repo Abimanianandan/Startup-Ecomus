@@ -47,7 +47,7 @@ const BestSeller = () => {
         <div className="row" style={{flexWrap:"nowrap",gap:"2px"}}>
           {/* card 1 */}
           <div class="col-sm-3 col-md-5 col-lg-3 d-flex justify-content-center">
-            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded position-relative">
+            <div class="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
               <img src={bsimage1} class="card-img-top b-one" alt="..." />
               <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i
@@ -77,7 +77,7 @@ const BestSeller = () => {
           </div>
           {/* cord 2 */}
           <div className="col-sm-3 col-md-5 col-lg-3 d-flex justify-content-center">
-            <div className="card shadow p-3 mb-5 bg-body-tertiary rounded position-relative">
+            <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
               <img src={bsimage2} className="card-img one b-two" alt="..." />
               {left ? (
                   <i
@@ -121,7 +121,7 @@ const BestSeller = () => {
           </div>
           {/* card 3  */}
           <div class="col-sm-3 col-md-5 col-lg-3 d-flex justify-content-center">
-            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded position-relative">
+            <div class="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
               <img src={bsimage4} class="card-img-top b-three" alt="..." />
               <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i
@@ -153,7 +153,7 @@ const BestSeller = () => {
           {/* card 4 */}
 
           <div class="col-sm-3 col-md-5 col-lg-3  d-flex justify-content-center">
-            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded position-relative">
+            <div class="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
               <img src={bsimage3} class="card-img-top b-four" alt="..." />
               {right ? (
               <i
@@ -195,7 +195,7 @@ const BestSeller = () => {
           </div>
           {/* card 5 */}
           <div class="col-sm-3 col-md-5 col-lg-3  d-flex justify-content-center">
-            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded position-relative">
+            <div class="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
               <img src="https://tse1.mm.bing.net/th?id=OIP.RIODAg7JWokrzN8JIgXaTgHaHa&pid=Api&P=0&h=180" class="card-img-top b-five" alt="..." />
               <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i

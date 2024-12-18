@@ -44,7 +44,7 @@ const HotDeals = () => {
 <h1 className="display-4 display-sm-3 display-md-2 display-lg-1 text-center mt-5">Hot Deals</h1>
       <div className="row mt-5" style={{flexWrap:"nowrap",gap:"2px"}}>    
         <div className="col-sm-3 col-md-5 col-lg-3">
-          <div className="card shadow p-3 mb-5 bg-body-tertiary rounded position-relative">
+          <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
             <img
               src={image1}
               className="card-img one"
@@ -63,7 +63,7 @@ const HotDeals = () => {
           </div>
         </div>
         <div className="col-sm-3 col-md-5 col-lg-3">
-          <div className="card shadow p-3 mb-5 bg-body-tertiary rounded position-relative">
+          <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
             <img
               src={image2}
               className="card-img two"
@@ -82,7 +82,7 @@ const HotDeals = () => {
           </div>
         </div>
         <div className="col-sm-3 col-md-5 col-lg-3">
-          <div className="card shadow p-3 mb-5 bg-body-tertiary rounded position-relative">
+          <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
             <img
               src={image3}
               className="card-img three"
@@ -117,7 +117,7 @@ const HotDeals = () => {
           </div>
         </div>
         <div className="col-sm-3 col-md-5 col-lg-3">
-          <div className="card shadow p-3 mb-5 bg-body-tertiary rounded position-relative">
+          <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
             <img
               src={image4}
               className="card-img four"
@@ -148,10 +148,10 @@ const HotDeals = () => {
           </div>
         </div>
         <div className="col-sm-3 col-md-5 col-lg-3">
-          <div className="card shadow p-3 mb-5 bg-body-tertiary rounded position-relative">
+          <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
             <img
               src="http://beyondthebox.ph/cdn/shop/products/STUDIOPROWIRELESSHEADPHONES1_COLOR-BLACK.jpg?v=1691628249"
-              className="card-img five"
+              className="card-img five "
               alt="..."
             />
             <div className="icons-container position-absolute d-flex justify-content-center ms-4">
@@ -161,15 +161,16 @@ const HotDeals = () => {
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
-            <h6 className='card-title'>Beats Studio HeadPhone</h6>
+            <h6 className='card-title'>Beats HeadPhone</h6>
             <p className="card-text">$299.00</p>  
             </div>
           </div>
         </div>
+        
         <div className="col-sm-3 col-md-5 col-lg-3">
-          <div className="card shadow p-3 mb-5 bg-body-tertiary rounded position-relative">
+          <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
             <img
-              src="https://tse2.mm.bing.net/th?id=OIP.0FDo1d-mZ75-cUiWi7tz2gHaEK&pid=Api&P=0&h=180"
+              src="https://www.jiomart.com/images/product/original/rvu6rvehky/portronics-power-pro-10k-10000mah-power-bank-with-dual-output-emergency-mobile-charger-white-por-1110-product-images-orvu6rvehky-p594206344-0-202210011829.jpg?im=Resize=(1000,1000)"
               className="card-img six"
               alt="..."
             />
@@ -180,7 +181,7 @@ const HotDeals = () => {
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
-            <h6 className='card-title'>Bluetooth Speaker</h6>
+            <h6 className='card-title'>Power Bank</h6>
             <p className="card-text">$199.00</p>  
             </div>
           </div>
