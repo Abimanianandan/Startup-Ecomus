@@ -1,5 +1,4 @@
 .card {
-    border: 1px solid transparent !important;
     overflow: hidden; /* Ensures the image doesn't overflow outside the card */
   }
   
