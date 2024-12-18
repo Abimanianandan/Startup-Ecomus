@@ -8,6 +8,7 @@
 .card-body{
 background-color: rgb(244, 245, 245);
 
+
 }
 
 .card img{
@@ -18,6 +19,7 @@ background-color: rgb(244, 245, 245);
 .card img:hover{
 cursor: pointer;    
 transform: scale(1.1);
+
 }
 
   
@@ -47,16 +49,21 @@ transform: scale(1.1);
 }
 
 @media only screen and (max-width:375px) {
-    @media only screen and (max-width:768px) {
+    
         .card{
             border: 1px solid transparent !important;
         width: 100% !important;
-        height: 388px !important;
+        height: 100vh !important;
         }
         .card img{
             width: 100% !important;
             height: 100vh !important;
         }
        
+<<<<<<< HEAD
     }
 }
+=======
+    
+}
+>>>>>>> 5220c6743d1ea66e788ae4c68b33a965717de357
