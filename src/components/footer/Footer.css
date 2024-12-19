@@ -1,4 +1,4 @@
-i:hover{
+.icon:hover{
     cursor: pointer;
     color: red !important;
 }

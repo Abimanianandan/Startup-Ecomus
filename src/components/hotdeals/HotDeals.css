@@ -1,27 +1,4 @@
-.card{
-    border: 1px solid transparent !important;
-     width: 263px !important;
-     height: 348px !important; 
-    overflow: hidden;
-}
 
-.card-body{
-background-color: rgb(244, 245, 245);
-
-}
-
-.card img{
-    transition:transform 1.5s;
-    
-}
-
-.card img:hover{
-cursor: pointer;    
-transform: scale(1.1);
-
-}
-
-  
   .icons-container {
     position: absolute;
     top: 70%;
@@ -29,7 +6,7 @@ transform: scale(1.1);
     transform: translate(-50%, -50%);
     opacity: 0; 
     visibility: hidden;
-     transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   
   .card:hover .icons-container {
@@ -46,45 +23,9 @@ transform: scale(1.1);
 .card{
     overflow: hidden;
     scroll-behavior: smooth;
-    position: relative;
-
-}
-.card-img {
-    transition: transform 1.5s; 
-    display: block;
     width: 100%;
-    height: auto;
 }
 
-.card:hover .one {
-    transform: scale(1.2) ; 
-    cursor: pointer;
-}
-.card:hover .two {
-    transform: scale(1.2) ; 
-    content: url("https://ecomusnext-themesflat.vercel.app/images/products/cable-black2.jpg");
-    cursor: pointer;
-}
-.card:hover .three {
-    transform: scale(1.2) ; 
-    content: url("https://ecomusnext-themesflat.vercel.app/images/products/headphone-red.jpg");
-    cursor: pointer;
-}
-.card:hover .four {
-    transform: scale(1.2) ; 
-    content: url("https://ecomusnext-themesflat.vercel.app/images/products/albert-white.jpg");
-    cursor: pointer;
-}
-.card:hover .five {
-    transform: scale(1.2) ; 
-    content: url("https://i5.walmartimages.com/asr/7da3d86a-16e4-40af-bf27-98d3669e6a66.d1c019872e308c4f94720407ea027ee3.jpeg");
-    cursor: pointer;
-}
-.card:hover .six {
-    transform: scale(1.2) ; 
-    content: url("https://tse4.mm.bing.net/th?id=OIP.ME7w8biTCoGCGAD20L1S6wHaHX&pid=Api&P=0&h=180");
-    cursor: pointer;
-}
 .arrow{
     position:absolute;
     margin: 0px;
@@ -92,6 +33,38 @@ transform: scale(1.1);
     top: 150px;
     left: 230px;
     font-size: 24px;
+}
+
+
+.one:hover {
+    transform: scale(1.2) ; 
+    content: url("https://ecomusnext-themesflat.vercel.app/images/products/bark-phone-blue2.jpg");
+    cursor: pointer;
+}
+.two:hover {
+    transform: scale(1.2) ; 
+    content: url("https://ecomusnext-themesflat.vercel.app/images/products/cable-black2.jpg");
+    cursor: pointer;
+}
+.three:hover {
+    transform: scale(1.2) ; 
+    content: url("https://ecomusnext-themesflat.vercel.app/images/products/headphone-red.jpg");
+    cursor: pointer;
+}
+.four:hover {
+    transform: scale(1.2) ; 
+    content: url("https://ecomusnext-themesflat.vercel.app/images/products/albert-white.jpg");
+    cursor: pointer;
+}
+.five:hover {
+    transform: scale(1.2) ; 
+    content: url("https://i5.walmartimages.com/asr/7da3d86a-16e4-40af-bf27-98d3669e6a66.d1c019872e308c4f94720407ea027ee3.jpeg");
+    cursor: pointer;
+}
+.six:hover {
+    transform: scale(1.2) ; 
+    content: url("https://cpimg.tistatic.com/06068194/b/4/Mobile-Power-Bank.jpg");
+    cursor: pointer;
 }
 
 @media only screen and (max-width:769px) {
@@ -104,26 +77,9 @@ transform: scale(1.1);
         width: 100% !important;
         height: 298px !important;
     }
-} 
+}  
 
 
-
-
- 
-
-/*
-.arrow{
-    position:absolute;
-    margin: 0px;
-    padding: 0px;
-    top: 200px;
-    left: 250px;
-    font-size: 24px;
-}
-.card-text:hover{
-   cursor: pointer;
-   color: red;
-} */
 
 @media only screen and (max-width : 768px){
     .row{
@@ -177,7 +133,6 @@ transform: scale(1.1);
   
   
   
- 
  
  
  

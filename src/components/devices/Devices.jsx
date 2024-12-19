@@ -6,7 +6,7 @@ const Devices = () => {
     <div className="container-fluid mt-5">
     <h2 className="d-flex justify-content-center fs-1 fw-normal mt-4">Shop Gram</h2>
     <p className="d-flex justify-content-center fw-lighter mt-3 discription">Inspire and let yourself be inspired, from one unique fashion to another .</p>
-    <div className="row row-cols-1 row-cols-md-5 g-5 justify-content-center mt-3">
+    <div className="row row-cols-1 row-cols-md-5 justify-content-center mt-3" style={{gap:"20px"}}>
       <div className="col-md-2">
         <div className="card item ">
           <div className="image-container dress position-relative">

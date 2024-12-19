@@ -1,57 +1,33 @@
-.card{
-    border: 1px solid transparent !important;
-width: 263px !important;
-height: 348px !important;
-}
 
-.card-body{
-background-color: rgb(244, 245, 245);
-
-}
-
-.card img{
-    transition: 1.1s;
-    
-}
-
-.card img:hover{
-transform: scale(1.1);
-}
 .card{
     overflow: hidden;
     scroll-behavior: smooth;
     position: relative;
 
 }
-.card-img {
-    transition: transform 1.5s; 
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
-.card:hover .b-one {
+.b-one:hover {
     transform: scale(1.2) ; 
     content: url("https://ecomusnext-themesflat.vercel.app/images/products/headphone-red.jpg");
     cursor: pointer;
 }
-.card:hover .b-two {
+.b-two:hover {
     transform: scale(1.2) ; 
     cursor: pointer;
 }
-.card:hover .b-three {
+.b-three:hover {
     transform: scale(1.2) ; 
     content: url("https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-white3.jpg");
     cursor: pointer;
 }
-.card:hover .b-four {
+.b-four:hover{
     transform: scale(1.2) ; 
     content: url("https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-white.jpg");
     cursor: pointer;
 }
-.card:hover .b-five {
+.b-five:hover{
     transform: scale(1.2) ; 
-    content: url("https://tse1.mm.bing.net/th?id=OIP.tt5jqcN5cn3iTYVh4v6vNgHaFj&pid=Api&P=0&h=180");
+    content: url("https://ecomusnext-themesflat.vercel.app/images/products/albert-white.jpg");
     cursor: pointer;
 }
 
