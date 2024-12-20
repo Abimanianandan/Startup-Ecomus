@@ -219,7 +219,7 @@ const handleWhite3 = () =>{
                     className="fa-solid fa-chevron-left  position-absolute angle"
                     style={{
                       top: "40%",
-                      right: "230px",
+                      right: "270px",
                       transform: "translateY(-50%)",
                       color: "black",
                       fontSize: "24px",

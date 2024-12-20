@@ -17,10 +17,10 @@ const HomePage = () => {
       <Scrollbar />
       <Navbar />
       <Carousel />
+      <Benifits />
       <HotDeals/>
       <Catagories/>
       <BestSeller/>
-      <Benifits />
       <Review />
       <CompanyLogo />
       <Devices />
