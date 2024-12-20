@@ -1,17 +1,18 @@
 
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import "../bestseller/BestSeller.css";
 import WhatsAppRedirect from "../whatsappredirection/WhatsAppRedirect";
+import { cartContext } from "../../App";
 
 
 const BestSeller = () => {
-  const productRef = useRef(null);
+    const {heart,setHeart,setHeartItem} = useContext(cartContext)
+    const productRef = useRef(null);
     const [right, setRight] = useState(true);
     const [left, setLeft] = useState(false);
     const [red,setRed] = useState(true);
     const [selectedProduct,setSelectedProduct]=useState("")
     const [buy,setBuy]=useState(false)
-
     const [white,setWhite] = useState(false);
     const [black,setBlack] = useState(false);
     const [blue,setBlue] = useState(true);
@@ -141,7 +142,10 @@ const handleBuying=(products)=>{
    setBuy(true)
     }
 
-
+    const handleHeart = (item) =>{
+      setHeartItem((prevItem)=> [...prevItem,item]) 
+       setHeart(heart + 1)    
+    }
   return (
     <div className="bestseller-main w-100%">
       <h1 className="display-4 display-sm-3 display-md-2 display-lg-1 text-center mt-5">
@@ -178,6 +182,11 @@ const handleBuying=(products)=>{
                 <i
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
+                  onClick={()=>handleHeart({
+                    name: "Beats Studio Buds",
+                    price: "$199.00",
+                   img: "https://ecomusnext-themesflat.vercel.app/images/products/headphone-white.jpg",
+                   })} 
                 ></i>
                 <i
                   className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
@@ -250,6 +259,11 @@ const handleBuying=(products)=>{
                 <i
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
+                  onClick={()=>handleHeart({
+                    name: "Case with MagSafe",
+                    price: "$19.99",
+                   img: "https://ecomusnext-themesflat.vercel.app/images/products/bark-phone-black.jpg",
+                   })} 
                 ></i>
                 <i
                   className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
@@ -291,6 +305,11 @@ const handleBuying=(products)=>{
                 <i
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
+                  onClick={()=>handleHeart({
+                    name: "Smart Watch Series 6",
+                    price: "$299.99",
+                   img: "https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-black2.jpg",
+                   })} 
                 ></i>
                 <i
                   className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
@@ -324,7 +343,7 @@ const handleBuying=(products)=>{
               alt="..."
             /> }
              {black3 && <img
-              src= "https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-black2.jpg"
+              src= "https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-black.jpg"
               className="card-img b-four"
               alt="..."
             /> }
@@ -344,6 +363,11 @@ const handleBuying=(products)=>{
                 <i
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
+                  onClick={()=>handleHeart({
+                    name: "Ultra Thin Labtop",
+                    price: "$999.99",
+                   img: "https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-black.jpg",
+                   })} 
                 ></i>
                 <i
                   className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
@@ -388,6 +412,11 @@ const handleBuying=(products)=>{
                 <i
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
+                  onClick={()=>handleHeart({
+                    name: "Wireless Earbuds",
+                    price: "$149.99",
+                   img: "https://ecomusnext-themesflat.vercel.app/images/products/albert-orange.jpg",
+                   })} 
                 ></i>
                 <i
                   className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"

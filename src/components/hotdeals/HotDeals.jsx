@@ -1,11 +1,13 @@
 
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import '../hotdeals/HotDeals.css'
 import WhatsAppRedirect from '../whatsappredirection/WhatsAppRedirect';
 import { Link } from 'react-router-dom';
+import { cartContext } from '../../App';
 
 
 const HotDeals = () => {
+  const {heart,setHeart,setHeartItem,cart,setCart,setCartItem} = useContext(cartContext)
   const productRef = useRef(null);
   const [rightArrow, setRightArrow] = useState(true);
   const [leftArrow, setLeftArrow] = useState(false);
@@ -184,12 +186,18 @@ const HotDeals = () => {
     setBlack5(false);
     setWhite4(false);
   }
-
-  
   const handleBuy=(products)=>{    
     setSelectedProduct(products)        
      setBuy(true) 
       }
+      const handleHeart = (item) =>{
+          setHeartItem((prevItem)=> [...prevItem,item]) 
+           setHeart(heart + 1)    
+        }
+      const handleCart = (item) =>{
+        setCartItem((prevItem)=> [...prevItem,item])
+        setCart(cart + 1)
+      }  
 
   return(
     <>
@@ -228,10 +236,18 @@ const HotDeals = () => {
             /> }
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon carticon" onClick={()=>handleBuy({name:'Case with MagSafe',price:'$19.99'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}> </i> 
-                <i className="fa-solid fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon" onClick={()=>handleHeart({
+                    name: "Case with MagSafe",
+                    price: "$19.99",
+                   img: "https://ecomusnext-themesflat.vercel.app/images/products/bark-phone-orange.jpg",
+                   })}  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <Link to="/ordermanagement"><i className="fa-regular fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
 
-                <i className="fa-solid fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon" onClick={()=>handleCart({
+                    name: "Case with MagSafe",
+                    price: "$19.99",
+                   img: "https://ecomusnext-themesflat.vercel.app/images/products/bark-phone-orange.jpg",
+                   })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 
 
             </div>
@@ -277,9 +293,17 @@ const HotDeals = () => {
            }
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'MagSafe 3 Cable',price:'$39.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  onClick={()=>handleHeart({
+                     name: "MagSafe 3 Cable",
+                     price: "$39.00",
+                     img: "https://ecomusnext-themesflat.vercel.app/images/products/cable-black.jpg",
+                   })} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleCart({
+                    name: "MagSafe 3 Cable",
+                    price: "$39.00",
+                   img: "https://tse3.mm.bing.net/th?id=OIP.NALIB-QgruWgm6afALuZWAAAAA&pid=Api&P=0&h=180",
+                   })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>MagSafe 3 Cable</h6>
@@ -332,9 +356,17 @@ const HotDeals = () => {
                 )}
             <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats Studio Buds',price:'$199.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleHeart({
+                     name: "Beats Studio Buds",
+                     price: "$199.00",
+                     img: "https://ecomusnext-themesflat.vercel.app/images/products/headphone-red2.jpg",
+                   })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleCart({
+                    name: "Beats Studio Buds",
+                    price: "$199.00",
+                   img: "https://ecomusnext-themesflat.vercel.app/images/products/headphone-black.jpg",
+                   })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>Beats Studio Buds</h6>
@@ -375,9 +407,17 @@ const HotDeals = () => {
                 )}
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Blue Ocean Band',price:'$9.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleHeart({
+                     name: "Blue Ocean Band",
+                     price: "$9.00",
+                     img: "https://ecomusnext-themesflat.vercel.app/images/products/albert-white.jpg",
+                   })}  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleCart({
+                     name: "Blue Ocean Band",
+                     price: "$9.00",
+                     img: "https://ecomusnext-themesflat.vercel.app/images/products/albert-white.jpg",
+                   })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>Blue Ocean Band</h6>
@@ -413,9 +453,17 @@ const HotDeals = () => {
             /> }
             <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats HeadPhone',price:'$299.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleHeart({
+                     name: "Beats HeadPhone",
+                     price: "$299.00",
+                     img: "https://tse4.mm.bing.net/th?id=OIP.9eSLzTejcVBWh5qDTnpSuAHaHa&pid=Api&P=0&h=180",
+                   })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleCart({
+                     name: "Beats HeadPhone",
+                     price: "$299.00",
+                     img: "https://tse4.mm.bing.net/th?id=OIP.RZjRvaO9IfDAwpD20I7e5wHaHa&pid=Api&P=0&h=180",
+                   })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>Beats HeadPhone</h6>
@@ -428,8 +476,7 @@ const HotDeals = () => {
                 </div>   
             </div>
           </div>
-        </div>
-        
+        </div>      
         <div className="col-sm-3 col-md-5 col-lg-3">
           <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
             {black5 && <img
@@ -450,9 +497,17 @@ const HotDeals = () => {
          
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Power Bank',price:'$199.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleHeart({
+                     name: "Power Bank",
+                     price: "$199.00",
+                     img: "https://tse2.mm.bing.net/th?id=OIP.QJSRRLaWeEdbiek9K9q0SAHaHa&pid=Api&P=0&h=180",
+                   })}  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleCart({
+                     name: "Power Bank",
+                     price: "$199.00",
+                     img: "https://www.jiomart.com/images/product/original/rvu6rvehky/portronics-power-pro-10k-10000mah-power-bank-with-dual-output-emergency-mobile-charger-white-por-1110-product-images-orvu6rvehky-p594206344-0-202210011829.jpg?im=Resize=(1000,1000)",
+                   })}  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>Power Bank</h6>
