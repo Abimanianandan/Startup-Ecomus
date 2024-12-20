@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import * as XLSX from "xlsx";
+// import * as XLSX from "xlsx";
 import '../ordermanagement/OrderManagement.css'
 
 const OrderManagement = () => {
