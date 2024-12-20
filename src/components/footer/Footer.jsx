@@ -27,19 +27,19 @@ const Footer = () => {
           </div>
           <div className="gap mt-3 d-flex justify-content-center justify-content-md-start icon">
             <a href="#" className="text-decoration-none me-3">
-              <i className="fa-brands fa-facebook fa-2x" style={{color:"black"}}></i>
+              <i className="fa-brands fa-facebook fa-2x  icon" style={{color:"black"}}></i>
             </a>
             <a href="#" className="text-decoration-none me-3">
-              <i className="fa-brands fa-x-twitter fa-2x" style={{color:"black"}}></i>
+              <i className="fa-brands fa-x-twitter fa-2x  icon" style={{color:"black"}}></i>
             </a>
             <a href="#" className="text-decoration-none me-3">
-              <i className="fa-brands fa-instagram fa-2x" style={{color:"black"}}></i>
+              <i className="fa-brands fa-instagram fa-2x  icon" style={{color:"black"}}></i>
             </a>
             <a href="#" className="text-decoration-none me-3">
-              <i className="fa-brands fa-tiktok fa-2x" style={{color:"black"}}></i>
+              <i className="fa-brands fa-tiktok fa-2x  icon" style={{color:"black"}}></i>
             </a>
             <a href="#" className="text-decoration-none">
-              <i className="fa-brands fa-pinterest fa-2x"style={{color:"black"}}></i>
+              <i className="fa-brands fa-pinterest fa-2x  icon"style={{color:"black"}}></i>
             </a>
           </div>
         </div>
@@ -107,7 +107,7 @@ const Footer = () => {
                 className="btn btn-dark d-flex align-items-center justify-content-center"
               >
                 Subscribe
-                <i className="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                <i className="fa-solid fa-arrow-up-right-from-square ms-2  icon"></i>
               </button>
             </div>
           </form>
@@ -117,9 +117,9 @@ const Footer = () => {
       <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4">
         <p className="mb-2 mb-md-0 text-center">© 2024 Ecomus Store. All Rights Reserved</p>
         <div className="d-flex justify-content-center">
-          <i className="fab fa-cc-visa fa-2x me-3"></i>
-          <i className="fab fa-cc-mastercard fa-2x me-3"></i>
-          <i className="fab fa-cc-paypal fa-2x"></i>
+          <i className="fab fa-cc-visa fa-2x me-3 icon"></i>
+          <i className="fab fa-cc-mastercard fa-2x me-3 icon"></i>
+          <i className="fab fa-cc-paypal fa-2x  icon"></i>
         </div>
       </div>
     </footer>

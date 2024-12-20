@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../navbar/Navbar.css"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -17,6 +18,8 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+
 
   return (
     <>
@@ -55,10 +58,16 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark" href="#">
-                  Shop
-                </a>
-              </li>
+  <Link
+    className="nav-link text-dark"
+    to={"/shop"}
+  >
+    Shop
+  </Link>
+</li>
+
+
+
               <li className="nav-item">
                 <a className="nav-link text-dark" href="#">
                   Products

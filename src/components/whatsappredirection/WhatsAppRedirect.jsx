@@ -45,13 +45,14 @@
 
 // export default WhatsAppRedirect
 
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import '../whatsappredirection/WhatsAppRedirect.css';
 
 const WhatsAppRedirect = ({ ProductName, ProductPtPrice }) => {
   const [name, setName] = useState('');
   const [mobile, setMobile] = useState('');
   const [message, setMessage] = useState('');
+  const    vanishbutton=useRef(null)  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -59,44 +60,53 @@ const WhatsAppRedirect = ({ ProductName, ProductPtPrice }) => {
     const whatsappNumber = '6379414200'; // Updated to your number
     const url = `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank'); // Open WhatsApp chat with pre-filled message
+    if(vanishbutton.current){
+        vanishbutton.current.style.display='none'
+    }else if(!vanishbutton.current){
+        vanishbutton.current.style.display = 
+        vanishbutton.current.style.display === 'none' ? 'block' : 'none';
+    }
   };
 
   return (
-    <div className="whatsapp-redirect">
-      <form className="row g-3" onSubmit={handleSubmit}>
+    <div className="whatsapp-redirect" ref={vanishbutton}>
+      <form className="row g-5 flex-column" onSubmit={handleSubmit}>
         <div className="col-auto">
+        <label for="for-name" class="visually">Name</label>
           <input
             type="text"
-            className="form-control"
-            placeholder="Enter your name"
+            className="form-control no-outline"
+            id='for-name'
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
 
         <div className="col-auto">
+        <label for="for-mobile" class="visually">Mobile</label>
           <input
             type="number"
             className="form-control"
-            placeholder="Enter your mobile number"
+            id="for-mobile"
             value={mobile}
             onChange={(e) => setMobile(e.target.value)}
           />
         </div>
 
         <div className="col-auto">
-          <input
+        <label for="floatingTextarea" class="visually">Message</label>
+          <textarea
             type="text"
             className="form-control"
-            placeholder="Enter message"
+            id="floatingTextarea"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
 
         <div className="col-auto">
-          <button type="submit" className="btn btn-primary mb-3">
-            Confirm Identity
+          <button type="submit" className="btn btn-success mb-3">
+          Submit 
           </button>
         </div>
       </form>

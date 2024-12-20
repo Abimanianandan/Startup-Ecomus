@@ -10,6 +10,7 @@ import CompanyLogo from '../components/company-logo/CompanyLogo'
 import Catagories from '../components/catagories/Catagories'
 import BestSeller from '../components/bestseller/BestSeller'
 import Scrollbar from '../components/scrollbar/Scrollbar'
+// import Shop from '../components/shoppage/Shop'
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
       <CompanyLogo />
       <Devices />
       <Footer />
+      {/* <Shop/> */}
     </>
   )
 }
