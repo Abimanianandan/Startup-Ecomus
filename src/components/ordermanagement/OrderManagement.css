@@ -1,0 +1,71 @@
+.order-management-container{
+    width: 100%;
+    height:  auto;
+     flex-direction: column;
+     display: flex!important;
+     justify-content: center !important;
+     align-items: center !important;
+}
+form label{
+    font-weight: 500;
+}
+.order-submit-btn{
+    justify-self: flex-end;
+}
+.order-two-bttn{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.order-form{
+
+    width:50% ;
+    border-radius: 5px;
+}
+ 
+    
+
+.order-input-name{
+    border-top: 2px solid transparent  !important;
+    border-left: 2px solid transparent  !important;
+    border-right: 2px solid transparent  !important;
+    border-bottom: 2px solid black  !important;
+    background-color: transparent  !important;
+    border-radius: 2px  !important;
+    color: black  !important;
+    font-weight: 400  !important;
+
+}
+.order-input-email{
+    border-top: 2px solid transparent  !important;
+    border-left: 2px solid transparent  !important;
+    border-right: 2px solid transparent  !important;
+    border-bottom: 2px solid black  !important;
+    background-color: transparent  !important;
+    border-radius: 2px  !important;
+    color: black  !important;
+    font-weight: 400  !important;
+
+}
+.order-input-product{
+    border-top: 2px solid transparent  !important;
+    border-left: 2px solid transparent  !important;
+    border-right: 2px solid transparent  !important;
+    border-bottom: 2px solid black  !important;
+    background-color: transparent  !important;
+    border-radius: 2px  !important;
+    color: black  !important;
+    font-weight: 400  !important;
+
+}
+.order-input-quantity{
+    border-top: 2px solid transparent  !important;
+    border-left: 2px solid transparent  !important;
+    border-right: 2px solid transparent  !important;
+    border-bottom: 2px solid black  !important;
+    background-color: transparent  !important;
+    border-radius: 2px  !important;
+    color: black  !important;
+    font-weight: 400  !important;
+    
+}

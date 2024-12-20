@@ -48,7 +48,7 @@
 import React, { useState,useRef } from 'react';
 import '../whatsappredirection/WhatsAppRedirect.css';
 
-const WhatsAppRedirect = ({ ProductName, ProductPtPrice }) => {
+const WhatsAppRedirect = ({ ProductName, ProductPtPrice,setBuy }) => {
   const [name, setName] = useState('');
   const [mobile, setMobile] = useState('');
   const [message, setMessage] = useState('');
@@ -67,6 +67,7 @@ const WhatsAppRedirect = ({ ProductName, ProductPtPrice }) => {
   const handleCancel=()=>{
     if(vanishbutton){
       vanishbutton.current.style.display='none'
+      setBuy(false)
     }
   }
 

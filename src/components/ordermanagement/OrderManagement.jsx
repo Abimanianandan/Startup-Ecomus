@@ -1,0 +1,135 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import * as XLSX from "xlsx";
+import '../ordermanagement/OrderManagement.css'
+
+const OrderManagement = () => {
+  const [orderDetails, setOrderDetails] = useState({
+    name: "",
+    email: "",
+    product: "",
+    quantity: "",
+  });
+
+  const handleInputChange = (e) => {
+    setOrderDetails({
+      ...orderDetails,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleOrder = () => {
+
+    const { name, email, product, quantity } = orderDetails;
+
+    if (!name || !email || !product || !quantity) {
+      alert("Please fill out all fields!");
+      return;
+    }
+
+    const workbook = XLSX.utils.book_new();
+    const worksheetData = [
+      ["Name", "Email", "Product", "Quantity"],
+      [name, email, product, quantity],
+    ];
+    const worksheet = XLSX.utils.aoa_to_sheet(worksheetData);
+
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Orders");
+
+    XLSX.writeFile(workbook, "OrderDetails.xlsx");
+
+    alert("Order placed and Excel file generated!");
+    setOrderDetails({ name: "", email: "", product: "", quantity: "" });
+  };
+
+  return (
+    <div className="order-management-container p-4">
+      <h2 className="text-center mb-4">Order Management</h2>
+    
+      <form className="order-form row g-3">
+        <div className="col-12">
+          <label htmlFor="name" className="form-label">
+            Your Name
+          </label>
+          <input
+            type="text"
+            className="form-control order-input-name"
+            id="name"
+            name="name"
+            value={orderDetails.name}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div className="col-12">
+          <label htmlFor="email" className="form-label">
+            Your Email
+          </label>
+          <input
+            type="email"
+            className="form-control order-input-email"
+            id="email"
+            name="email"
+            value={orderDetails.email}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div className="col-12">
+          <label htmlFor="product" className="form-label">
+            Product Name
+          </label>
+          <input
+            type="text"
+            className="form-control order-input-product"
+            id="product"
+            name="product"
+            value={orderDetails.product}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div className="col-12">
+          <label htmlFor="quantity" className="form-label">
+            Quantity
+          </label>
+          <input
+            type="number"
+            className="form-control order-input-quantity"
+            id="quantity"
+            name="quantity"
+            value={orderDetails.quantity}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div className="col-12 order-two-bttn">
+          <Link to='/'><button
+            type="button"
+            className="btn btn-success order-submit-btn"
+            onClick={handleOrder}
+            required
+
+          >
+            Place Order
+          </button>
+          </Link>
+          
+        
+       
+        <Link to='/'><button
+            type="button"
+            className="btn btn-success order-submit-btn flex-end"
+            required
+          >
+            cancel
+          </button>
+          </Link>
+          
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default OrderManagement;

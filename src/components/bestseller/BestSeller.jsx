@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import "../bestseller/BestSeller.css";
 import WhatsAppRedirect from "../whatsappredirection/WhatsAppRedirect";
+import { Link } from "react-router-dom";
 
 
 const BestSeller = () => {
@@ -178,10 +179,8 @@ const handleBuying=(products)=>{
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
                 ></i>
-                <i
-                  className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
-                  style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
-                ></i>
+              <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+
                 <i
                   className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
@@ -250,10 +249,8 @@ const handleBuying=(products)=>{
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
                 ></i>
-                <i
-                  className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
-                  style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
-                ></i>
+                              <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+
                 <i
                   className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
@@ -291,10 +288,8 @@ const handleBuying=(products)=>{
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
                 ></i>
-                <i
-                  className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
-                  style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
-                ></i>
+                              <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+
                 <i
                   className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
@@ -344,10 +339,8 @@ const handleBuying=(products)=>{
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
                 ></i>
-                <i
-                  className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
-                  style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
-                ></i>
+                              <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+
                 <i
                   className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
@@ -388,10 +381,8 @@ const handleBuying=(products)=>{
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
                 ></i>
-                <i
-                  className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
-                  style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
-                ></i>
+                              <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+
                 <i
                   className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
