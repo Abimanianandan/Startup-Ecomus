@@ -1,7 +1,7 @@
 
   .icons-container {
     position: absolute;
-    top: 70%;
+    top: 55%;
     left: 40%;
     transform: translate(-50%, -50%);
     opacity: 0; 
@@ -31,7 +31,7 @@
     margin: 0px;
     padding: 0px;
     top: 150px;
-    left: 230px;
+    left: 270px;
     font-size: 24px;
 }
 

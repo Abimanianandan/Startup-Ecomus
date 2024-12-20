@@ -3,9 +3,11 @@
     overflow: hidden;
     scroll-behavior: smooth;
     position: relative;
-
 }
-
+.buy:hover{
+    background-color: black !important;
+    color: white !important;
+}
 .b-one:hover {
     transform: scale(1.2) ; 
     content: url("https://ecomusnext-themesflat.vercel.app/images/products/headphone-red.jpg");
