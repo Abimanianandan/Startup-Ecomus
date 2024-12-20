@@ -2,7 +2,11 @@
 import React, { useContext, useRef, useState } from "react";
 import "../bestseller/BestSeller.css";
 import WhatsAppRedirect from "../whatsappredirection/WhatsAppRedirect";
+<<<<<<< HEAD
 import { cartContext } from "../../App";
+=======
+import { Link } from "react-router-dom";
+>>>>>>> 58c21472636b8dfbcb5ce4202eca1b8fb30ab77f
 
 
 const BestSeller = () => {
@@ -188,10 +192,8 @@ const handleBuying=(products)=>{
                    img: "https://ecomusnext-themesflat.vercel.app/images/products/headphone-white.jpg",
                    })} 
                 ></i>
-                <i
-                  className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
-                  style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
-                ></i>
+              <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+
                 <i
                   className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
@@ -265,10 +267,8 @@ const handleBuying=(products)=>{
                    img: "https://ecomusnext-themesflat.vercel.app/images/products/bark-phone-black.jpg",
                    })} 
                 ></i>
-                <i
-                  className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
-                  style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
-                ></i>
+                              <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+
                 <i
                   className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
@@ -311,10 +311,8 @@ const handleBuying=(products)=>{
                    img: "https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-black2.jpg",
                    })} 
                 ></i>
-                <i
-                  className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
-                  style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
-                ></i>
+                              <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+
                 <i
                   className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
@@ -369,10 +367,8 @@ const handleBuying=(products)=>{
                    img: "https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-black.jpg",
                    })} 
                 ></i>
-                <i
-                  className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
-                  style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
-                ></i>
+                              <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+
                 <i
                   className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
@@ -418,10 +414,8 @@ const handleBuying=(products)=>{
                    img: "https://ecomusnext-themesflat.vercel.app/images/products/albert-orange.jpg",
                    })} 
                 ></i>
-                <i
-                  className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
-                  style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
-                ></i>
+                              <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+
                 <i
                   className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}

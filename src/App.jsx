@@ -2,6 +2,7 @@ import React, { createContext, useState } from 'react'
 import HomePage from './pages/HomePage'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Shop from './components/shoppage/Shop'
+import OrderManagement from './components/ordermanagement/OrderManagement'
 import Cartpage from './components/cartpage/Cartpage';
 import Wishlist from './components/wishlist/Wishlist';
 
@@ -18,6 +19,7 @@ const App = () => {
        <Routes>
          <Route path="/" element={<HomePage />}/>
          <Route path='/shop' element={<Shop/>}/>
+         <Route path='/ordermanagement' element={<OrderManagement/>}/>
          <Route path='/cart' element={<Cartpage />}/>
          <Route path='/heart' element={<Wishlist />}/>
        </Routes>

@@ -236,6 +236,7 @@ const HotDeals = () => {
             /> }
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon carticon" onClick={()=>handleBuy({name:'Case with MagSafe',price:'$19.99'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}> </i> 
+<<<<<<< HEAD
                 <i className="fa-solid fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon" onClick={()=>handleHeart({
                     name: "Case with MagSafe",
                     price: "$19.99",
@@ -248,6 +249,11 @@ const HotDeals = () => {
                     price: "$19.99",
                    img: "https://ecomusnext-themesflat.vercel.app/images/products/bark-phone-orange.jpg",
                    })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+=======
+                <i className="fa-solid fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+                <i className="fa-solid fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+>>>>>>> 58c21472636b8dfbcb5ce4202eca1b8fb30ab77f
                 
 
             </div>
@@ -293,6 +299,7 @@ const HotDeals = () => {
            }
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'MagSafe 3 Cable',price:'$39.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+<<<<<<< HEAD
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  onClick={()=>handleHeart({
                      name: "MagSafe 3 Cable",
                      price: "$39.00",
@@ -304,6 +311,11 @@ const HotDeals = () => {
                     price: "$39.00",
                    img: "https://tse3.mm.bing.net/th?id=OIP.NALIB-QgruWgm6afALuZWAAAAA&pid=Api&P=0&h=180",
                    })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+=======
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+>>>>>>> 58c21472636b8dfbcb5ce4202eca1b8fb30ab77f
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>MagSafe 3 Cable</h6>
@@ -356,6 +368,7 @@ const HotDeals = () => {
                 )}
             <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats Studio Buds',price:'$199.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+<<<<<<< HEAD
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleHeart({
                      name: "Beats Studio Buds",
                      price: "$199.00",
@@ -367,6 +380,11 @@ const HotDeals = () => {
                     price: "$199.00",
                    img: "https://ecomusnext-themesflat.vercel.app/images/products/headphone-black.jpg",
                    })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+=======
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+>>>>>>> 58c21472636b8dfbcb5ce4202eca1b8fb30ab77f
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>Beats Studio Buds</h6>
@@ -407,6 +425,7 @@ const HotDeals = () => {
                 )}
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Blue Ocean Band',price:'$9.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+<<<<<<< HEAD
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleHeart({
                      name: "Blue Ocean Band",
                      price: "$9.00",
@@ -418,6 +437,11 @@ const HotDeals = () => {
                      price: "$9.00",
                      img: "https://ecomusnext-themesflat.vercel.app/images/products/albert-white.jpg",
                    })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+=======
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+>>>>>>> 58c21472636b8dfbcb5ce4202eca1b8fb30ab77f
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>Blue Ocean Band</h6>
@@ -453,6 +477,7 @@ const HotDeals = () => {
             /> }
             <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats HeadPhone',price:'$299.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+<<<<<<< HEAD
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleHeart({
                      name: "Beats HeadPhone",
                      price: "$299.00",
@@ -464,6 +489,11 @@ const HotDeals = () => {
                      price: "$299.00",
                      img: "https://tse4.mm.bing.net/th?id=OIP.RZjRvaO9IfDAwpD20I7e5wHaHa&pid=Api&P=0&h=180",
                    })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+=======
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+>>>>>>> 58c21472636b8dfbcb5ce4202eca1b8fb30ab77f
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>Beats HeadPhone</h6>
