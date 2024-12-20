@@ -52,26 +52,31 @@ const WhatsAppRedirect = ({ ProductName, ProductPtPrice }) => {
   const [name, setName] = useState('');
   const [mobile, setMobile] = useState('');
   const [message, setMessage] = useState('');
-  const    vanishbutton=useRef(null)  
+  const vanishbutton=useRef(null)  
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const whatsappMessage = `Product: ${ProductName}, Price: ${ProductPtPrice}, Name: ${name}, Mobile: ${mobile}, Message: ${message}`;
-    const whatsappNumber = '6379414200'; // Updated to your number
+    const whatsappNumber = '7639495042'; // Updated to your number
     const url = `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank'); // Open WhatsApp chat with pre-filled message
-    if(vanishbutton.current){
-        vanishbutton.current.style.display='none'
-    }else if(!vanishbutton.current){
-        vanishbutton.current.style.display = 
-        vanishbutton.current.style.display === 'none' ? 'block' : 'none';
+    if(vanishbutton){
+      vanishbutton.current.style.display='none'
     }
   };
+  const handleCancel=()=>{
+    if(vanishbutton){
+      vanishbutton.current.style.display='none'
+    }
+  }
 
   return (
     <div className="whatsapp-redirect" ref={vanishbutton}>
-      <form className="row g-5 flex-column" onSubmit={handleSubmit}>
-        <div className="col-auto">
+    <i class="fa-solid fa-x x-icon"on onClick={handleCancel}></i>
+      <form className="row g-0 from-container  flex-column" onSubmit={handleSubmit}>
+        
+      <h3 className='whatsapp-heading  g-3'>Order Via  WatsApp</h3>
+        <div className="col-auto g-3">
         <label for="for-name" class="visually">Name</label>
           <input
             type="text"
@@ -79,10 +84,11 @@ const WhatsAppRedirect = ({ ProductName, ProductPtPrice }) => {
             id='for-name'
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
           />
         </div>
 
-        <div className="col-auto">
+        <div className="col-auto g-3">
         <label for="for-mobile" class="visually">Mobile</label>
           <input
             type="number"
@@ -90,10 +96,11 @@ const WhatsAppRedirect = ({ ProductName, ProductPtPrice }) => {
             id="for-mobile"
             value={mobile}
             onChange={(e) => setMobile(e.target.value)}
+            required
           />
         </div>
 
-        <div className="col-auto">
+        <div className="col-auto g-3">
         <label for="floatingTextarea" class="visually">Message</label>
           <textarea
             type="text"
@@ -101,12 +108,13 @@ const WhatsAppRedirect = ({ ProductName, ProductPtPrice }) => {
             id="floatingTextarea"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            required
           />
         </div>
 
-        <div className="col-auto">
+        <div className="col-auto g-3 flex-start" >
           <button type="submit" className="btn btn-success mb-3">
-          Submit 
+          Submit <i class="fa-solid fa-arrow-up-right-from-square" ></i>
           </button>
         </div>
       </form>

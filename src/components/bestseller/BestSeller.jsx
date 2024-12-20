@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import "../bestseller/BestSeller.css";
+import WhatsAppRedirect from "../whatsappredirection/WhatsAppRedirect";
 
 
 const BestSeller = () => {
@@ -7,6 +8,9 @@ const BestSeller = () => {
     const [right, setRight] = useState(true);
     const [left, setLeft] = useState(false);
     const [red,setRed] = useState(true);
+    const [selectedProduct,setSelectedProduct]=useState("")
+    const [buy,setBuy]=useState(false)
+
     const [white,setWhite] = useState(false);
     const [black,setBlack] = useState(false);
     const [blue,setBlue] = useState(true);
@@ -131,11 +135,21 @@ const handleWhite3 = () =>{
   setOrange1(false);
   setBlack4(false);
 }
+const handleBuying=(products)=>{    
+  setSelectedProduct(products)        
+   setBuy(true) 
+    }
+
+
   return (
     <div className="bestseller-main w-100%">
       <h1 className="display-4 display-sm-3 display-md-2 display-lg-1 text-center mt-5">
         Best Seller
       </h1>
+      {buy ? 
+   
+   <WhatsAppRedirect setBuy={setBuy} ProductName={selectedProduct.name} ProductPrice={selectedProduct.price}/>
+    :
       <div className="container mt-5" ref={productRef}>
         <div className="row" style={{flexWrap:"nowrap",gap:"2px"}}>
           {/* card 1 */}
@@ -182,7 +196,7 @@ const handleWhite3 = () =>{
                   <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: white && "1px solid black",color:"white"}} onMouseEnter={handleWhite}></i>  
                   <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: black && "1px solid black",color:"black"}} onMouseEnter={handleBlack}></i>  
                 </div>  
-                <button className="btn rounded-pill mt-3 w-100 buy">ADD TO CART</button>
+                <button className="btn rounded-pill mt-3 w-100 buy" onClick={()=>handleBuying({name:'Case with MagSafe',price:'$19.99'})}>ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -397,7 +411,8 @@ const handleWhite3 = () =>{
             </div>
           </div>
         </div>
-      </div>
+      </div> 
+}
     </div>
   );
 };

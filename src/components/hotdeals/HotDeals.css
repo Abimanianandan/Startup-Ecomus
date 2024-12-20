@@ -85,19 +85,12 @@
     
     display: none;
     z-index: 1000;
- background-color: rgb(43, 43, 43);
-width: 100%;
 height: auto;
     
 
 }
 
-.containers{
-    position: relative !important;
-}
-.carticon{
-    color: rgb(108, 82, 82);
-}
+
 
 
 @media only screen and (max-width : 768px){

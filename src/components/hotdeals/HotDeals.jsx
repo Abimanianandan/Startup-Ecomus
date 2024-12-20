@@ -225,10 +225,11 @@ const HotDeals = () => {
               alt="..."
             /> }
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon carticon" onClick={()=>handleBuy({name:'Case with MagSafe',price:'$19.99'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}> </i> 
+                <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon carticon" onClick={()=>handleBuy({name:'Case with MagSafe',price:'$19.99'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}> </i> 
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+
             </div>
             <div className="card-body text-center">
                <h6 className='card-title'>Case with MagSafe</h6>
@@ -271,10 +272,10 @@ const HotDeals = () => {
             />
            }
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'MagSafe 3 Cable',price:'$39.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'MagSafe 3 Cable',price:'$39.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>MagSafe 3 Cable</h6>
@@ -326,10 +327,10 @@ const HotDeals = () => {
                   ""
                 )}
             <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats Studio Buds',price:'$199.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats Studio Buds',price:'$199.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>Beats Studio Buds</h6>
@@ -369,10 +370,10 @@ const HotDeals = () => {
                   ""
                 )}
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Blue Ocean Band',price:'$9.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Blue Ocean Band',price:'$9.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>Blue Ocean Band</h6>
@@ -407,10 +408,10 @@ const HotDeals = () => {
               alt="..."
             /> }
             <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats HeadPhone',price:'$299.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats HeadPhone',price:'$299.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>Beats HeadPhone</h6>
@@ -444,10 +445,10 @@ const HotDeals = () => {
             /> }
          
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Power Bank',price:'$199.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-credit-card p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Power Bank',price:'$199.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
             <h6 className='card-title'>Power Bank</h6>
