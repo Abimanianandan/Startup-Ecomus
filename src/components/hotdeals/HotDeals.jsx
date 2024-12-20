@@ -1,3 +1,4 @@
+
 import React, { useRef, useState } from 'react'
 import '../hotdeals/HotDeals.css'
 import WhatsAppRedirect from '../whatsappredirection/WhatsAppRedirect';
@@ -230,6 +231,7 @@ const HotDeals = () => {
                 <i className="fa-solid fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <Link to="/ordermanagement"><i className="fa-regular fa-handshake ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i></Link>
                 <i className="fa-solid fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                
 
             </div>
             <div className="card-body text-center">

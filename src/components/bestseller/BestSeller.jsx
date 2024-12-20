@@ -1,3 +1,4 @@
+
 import React, { useRef, useState } from "react";
 import "../bestseller/BestSeller.css";
 import WhatsAppRedirect from "../whatsappredirection/WhatsAppRedirect";
@@ -38,7 +39,7 @@ const BestSeller = () => {
           requestAnimationFrame(scroll);
         }
       };
-  
+ 
       requestAnimationFrame(scroll);
     };
     const handleRight = () => {
@@ -138,7 +139,7 @@ const handleWhite3 = () =>{
 }
 const handleBuying=(products)=>{    
   setSelectedProduct(products)        
-   setBuy(true) 
+   setBuy(true)
     }
 
 
@@ -147,7 +148,7 @@ const handleBuying=(products)=>{
       <h1 className="display-4 display-sm-3 display-md-2 display-lg-1 text-center mt-5">
         Best Seller
       </h1>
-      {buy ? 
+      {buy ?
    
    <WhatsAppRedirect setBuy={setBuy} ProductName={selectedProduct.name} ProductPrice={selectedProduct.price}/>
     :
@@ -244,7 +245,7 @@ const handleBuying=(products)=>{
                   ""
                 )}
               <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                
+               
                 <i
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
                   style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
@@ -265,7 +266,7 @@ const handleBuying=(products)=>{
                   <i className="fa-solid fa-circle p-1 rounded-circle orange" style={{border: orange && "1px solid black",color:"orange"}} onMouseEnter={handleOrange}></i>  
                   <i className="fa-solid fa-circle p-1 rounded-circle green" style={{border:green && "1px solid black",color:"rgb(127, 213, 127)"}} onMouseEnter={handleGreen}></i>  
                   <i className="fa-solid fa-circle p-1 rounded-circle brown" style={{border:brown && "1px solid black",color:"rgb(167, 126, 126)"}} onMouseEnter={handleBrown}></i>  
-                </div> 
+                </div>
                 <button className="btn rounded-pill mt-3 w-100 buy">ADD TO CART</button>
               </div>
             </div>
@@ -329,7 +330,7 @@ const handleBuying=(products)=>{
               role="button"
               onClick={handleRight}
             ></i>
-            
+           
                  
                 ) : (
                   ""
@@ -402,7 +403,7 @@ const handleBuying=(products)=>{
             </div>
           </div>
         </div>
-      </div> 
+      </div>
 }
     </div>
   );
