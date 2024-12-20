@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react'
 import '../hotdeals/HotDeals.css'
-// import WhatsAppRedirect from '../whatsappredirection/WhatsAppRedirect';
-import { Link } from 'react-router-dom';
+import WhatsAppRedirect from '../whatsappredirection/WhatsAppRedirect';
 
 
 const HotDeals = () => {
@@ -10,7 +9,6 @@ const HotDeals = () => {
   const [leftArrow, setLeftArrow] = useState(false);
   const [selectedProduct,setSelectedProduct]=useState("")
   const [buy,setBuy]=useState(false)
-  // const whatsappRef=useRef(null);
   const [blue,setBlue] = useState(true);
   const [black,setBlack] = useState(false);
   const [orange,setOrange] = useState(false);
@@ -186,19 +184,18 @@ const HotDeals = () => {
   }
 
   
-  const handleBuy=(products)=>{
-    setSelectedProduct(products)
-    if (whatsappRef.current) {
-      whatsappRef.current.style.display =
-       whatsappRef.current.style.display=== 'none'?'block':'none';
-    }
-    
+  const handleBuy=(products)=>{    
+    setSelectedProduct(products)        
+     setBuy(true) 
       }
 
   return(
     <>
     <h1 className="d-flex justify-content-center mt-5">Hot Deals</h1>
-    <div className="container" ref={productRef}>
+   {buy ? 
+   
+       <WhatsAppRedirect setBuy={setBuy} ProductName={selectedProduct.name} ProductPrice={selectedProduct.price}/>
+        : <div className="container" ref={productRef}>
       <div className="row mt-5 hotdealsrow-container " style={{flexWrap:"nowrap"}}>  
         <div className="col-sm-3 col-md-5 col-lg-3">
           <div className="card shadow p-4 mb-5 bg-body-tertiary rounded  position-relative"  >
@@ -228,7 +225,7 @@ const HotDeals = () => {
               alt="..."
             /> }
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-               <Link to='/whatsappredirect'> <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon carticon" onClick={()=>handleBuy({name:'Case with MagSafe',price:'$19.99'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}> </i> </Link>
+                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon carticon" onClick={()=>handleBuy({name:'Case with MagSafe',price:'$19.99'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}> </i> 
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
@@ -274,7 +271,7 @@ const HotDeals = () => {
             />
            }
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon" style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'MagSafe 3 Cable',price:'$39.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
@@ -329,7 +326,7 @@ const HotDeals = () => {
                   ""
                 )}
             <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon" style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats Studio Buds',price:'$199.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
@@ -372,7 +369,7 @@ const HotDeals = () => {
                   ""
                 )}
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon" style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Blue Ocean Band',price:'$9.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
@@ -410,7 +407,7 @@ const HotDeals = () => {
               alt="..."
             /> }
             <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon" style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats HeadPhone',price:'$299.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
@@ -447,7 +444,7 @@ const HotDeals = () => {
             /> }
          
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
-                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon" style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Power Bank',price:'$199.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
@@ -464,16 +461,8 @@ const HotDeals = () => {
           </div>
         </div>
       </div>
-      {/* <div className="whatsappredirection" ref={whatsappRef}> 
-{selectedProduct&&(
-
-<WhatsAppRedirect 
-productName={selectedProduct.name}
-productPrice={selectedProduct.price}/>
-)}
-
-      </div> */}
-    </div>
+     
+    </div> }
     
     
   

@@ -4,10 +4,9 @@ import "../catagories/Catagories.css";
 const Categories = () => {
   return (
     <div className="catagory-main-container">
-      <h1 className="display-4 display-sm-3 display-md-2 display-lg-1 text-center mt-5">
+      <h1 className="d-flex justify-content-center mt-5">
         Shop by category
       </h1>
-
       <div className="main-container py-4 w-100 h-100 mt-5">
         {/* Sub Container */}
         <div className="sub-container container w-100 h-100   d-flex justify-content-center">

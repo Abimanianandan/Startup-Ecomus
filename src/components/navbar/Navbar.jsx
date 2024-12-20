@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [home,setHome] = useState(true);
+  const [shop,setShop] = useState(false);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,7 +22,24 @@ const Navbar = () => {
     };
   }, []);
 
-
+  const handleHome = () =>{
+    if(home){
+      setHome(false)
+      setShop(true)
+    }else{
+      setHome(true)
+      setShop(false)
+    }
+    
+  }
+  // const handleShop = () =>{
+  //   if(shop){
+  //     setShop()
+  //   }else{
+  //     setShop(false)
+  //   }
+    
+  // }
 
   return (
     <>
@@ -49,18 +69,20 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="nav nav-underline justify-content-center ms-auto">
               <li className="nav-item">
-                <a
-                  className="nav-link text-danger active"
+                <Link
+                  className={home ? "nav-link text-danger active" : "nav-link text-dark"}
                   aria-current="page"
-                  href="#"
+                  to={"/"}
+                  onClick={handleHome}
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
   <Link
-    className="nav-link text-dark"
+    className={shop ? "nav-link text-danger active " : "nav-link text-dark"}
     to={"/shop"}
+    onClick={handleHome}
   >
     Shop
   </Link>

@@ -1,6 +1,6 @@
 .whatsapp-redirect {
   width: 100%;
-background-color: rgb(43, 39, 39);
+  background-color: rgb(43, 39, 39);
   margin: 0 auto;
   position: relative;
   left: 0;
@@ -11,9 +11,7 @@ background-color: rgb(43, 39, 39);
   
 }
 form label{
-    padding: 5px;
-
-    
+    padding: 5px;  
 }
 
 
