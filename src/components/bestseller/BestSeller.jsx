@@ -1,10 +1,16 @@
 import React, { useContext, useRef, useState } from "react";
 import "../bestseller/BestSeller.css";
+<<<<<<< HEAD
 import { cartContext } from "../../App";
+=======
+import WhatsAppRedirect from "../whatsappredirection/WhatsAppRedirect";
+
+>>>>>>> d687bb86dc345d43bad68396340b24f9e6ce88e8
 
 const BestSeller = () => {
   const { cart, setCart, setCartItem, heart,setHeart,setHeartItem} = useContext(cartContext);
   const productRef = useRef(null);
+<<<<<<< HEAD
   const [right, setRight] = useState(true);
   const [left, setLeft] = useState(false);
   const [red, setRed] = useState(true);
@@ -32,6 +38,48 @@ const BestSeller = () => {
       element.scrollLeft = start + scrollAmount;
       if (timeElapsed < duration) {
         requestAnimationFrame(scroll);
+=======
+    const [right, setRight] = useState(true);
+    const [left, setLeft] = useState(false);
+    const [red,setRed] = useState(true);
+    const [selectedProduct,setSelectedProduct]=useState("")
+    const [buy,setBuy]=useState(false)
+
+    const [white,setWhite] = useState(false);
+    const [black,setBlack] = useState(false);
+    const [blue,setBlue] = useState(true);
+    const [black1,setBlack1] = useState(false);
+    const [orange,setOrange] = useState(false);
+    const [green,setGreen] = useState(false);
+    const [brown,setBrown] = useState(false);
+    const [black2,setBlack2] = useState(true);
+    const [white1,setWhite1] = useState(false);
+    const [black3,setBlack3] = useState(true);
+    const [white2,setWhite2] = useState(false);
+    const [black4,setBlack4] = useState(true);
+    const [orange1,setOrange1] = useState(false)
+    const [white3,setWhite3] = useState(false);
+   
+    const smoothScroll = (element, distance, duration) => {
+      let start = element.scrollLeft;
+      let startTime = performance.now();
+      const scroll = (time) => {
+        const timeElapsed = time - startTime;
+        const scrollAmount = Math.min(timeElapsed / duration, 1) * distance;
+        element.scrollLeft = start + scrollAmount;
+        if (timeElapsed < duration) {
+          requestAnimationFrame(scroll);
+        }
+      };
+  
+      requestAnimationFrame(scroll);
+    };
+    const handleRight = () => {
+      if (productRef.current) {
+        smoothScroll(productRef.current, 1400, 1000);
+        setRight(false);
+        setLeft(true);
+>>>>>>> d687bb86dc345d43bad68396340b24f9e6ce88e8
       }
     };
 
@@ -112,6 +160,7 @@ const BestSeller = () => {
   const handleBlack3 = () => {
     setBlack3(true);
     setWhite2(false);
+<<<<<<< HEAD
   };
   const handleWhite2 = () => {
     setWhite2(true);
@@ -140,11 +189,43 @@ const BestSeller = () => {
     setHeartItem((prevItem)=> [...prevItem,item]) 
     setHeart(heart + 1)    
   }
+=======
+}
+const handleWhite2 = () =>{
+  setWhite2(true);
+  setBlack3(false);
+}
+const handleBlack4 = () =>{
+  setBlack4(true);
+  setOrange1(false);
+  setWhite3(false);
+}
+const handleOrange1 = () =>{
+  setOrange1(true);
+  setBlack4(false);
+  setWhite3(false);
+}
+const handleWhite3 = () =>{
+  setWhite3(true);
+  setOrange1(false);
+  setBlack4(false);
+}
+const handleBuying=(products)=>{    
+  setSelectedProduct(products)        
+   setBuy(true) 
+    }
+
+
+>>>>>>> d687bb86dc345d43bad68396340b24f9e6ce88e8
   return (
     <div className="bestseller-main w-100%">
       <h1 className="display-4 display-sm-3 display-md-2 display-lg-1 text-center mt-5">
         Best Seller
       </h1>
+      {buy ? 
+   
+   <WhatsAppRedirect setBuy={setBuy} ProductName={selectedProduct.name} ProductPrice={selectedProduct.price}/>
+    :
       <div className="container mt-5" ref={productRef}>
         <div className="row" style={{ flexWrap: "nowrap", gap: "2px" }}>
           {/* card 1 */}
@@ -192,6 +273,7 @@ const BestSeller = () => {
               </div>
               <div className="card-body text-center">
                 <h6 className="card-title">Beats Studio Buds</h6>
+<<<<<<< HEAD
                 <p className="card-text">$199.00 &nbsp; </p>
                 <div
                   className="circle-colors d-flex justify-content-center"
@@ -231,6 +313,16 @@ const BestSeller = () => {
                 >
                   ADD TO CART
                 </button>
+=======
+                <p className="card-text">
+                  $199.00 &nbsp;{" "}</p>
+                  <div className="circle-colors d-flex justify-content-center" style={{gap:"15px",cursor:"pointer"}} >
+                  <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: red && "1px solid black",color:"red"}} onMouseEnter={handleRed}></i>  
+                  <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: white && "1px solid black",color:"white"}} onMouseEnter={handleWhite}></i>  
+                  <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: black && "1px solid black",color:"black"}} onMouseEnter={handleBlack}></i>  
+                </div>  
+                <button className="btn rounded-pill mt-3 w-100 buy" onClick={()=>handleBuying({name:'Case with MagSafe',price:'$19.99'})}>ADD TO CART</button>
+>>>>>>> d687bb86dc345d43bad68396340b24f9e6ce88e8
               </div>
             </div>
           </div>
@@ -622,7 +714,8 @@ const BestSeller = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
+}
     </div>
   );
 };
