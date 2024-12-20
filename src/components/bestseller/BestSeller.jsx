@@ -182,6 +182,7 @@ const handleWhite3 = () =>{
                   <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: white && "1px solid black",color:"white"}} onMouseEnter={handleWhite}></i>  
                   <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: black && "1px solid black",color:"black"}} onMouseEnter={handleBlack}></i>  
                 </div>  
+                <button className="btn rounded-pill mt-3 w-100 buy">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -254,6 +255,7 @@ const handleWhite3 = () =>{
                   <i className="fa-solid fa-circle p-1 rounded-circle green" style={{border:green && "1px solid black",color:"rgb(127, 213, 127)"}} onMouseEnter={handleGreen}></i>  
                   <i className="fa-solid fa-circle p-1 rounded-circle brown" style={{border:brown && "1px solid black",color:"rgb(167, 126, 126)"}} onMouseEnter={handleBrown}></i>  
                 </div> 
+                <button className="btn rounded-pill mt-3 w-100 buy">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -292,6 +294,7 @@ const handleWhite3 = () =>{
                   <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: black2 && "1px solid black",color:"black"}} onMouseEnter={handleBlack2}></i>  
                   <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: white1 && "1px solid black",color:"white"}} onMouseEnter={handleWhite1}></i>  
                 </div>
+                <button className="btn  rounded-pill mt-3 w-100 buy">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -344,6 +347,7 @@ const handleWhite3 = () =>{
                   <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: black3 && "1px solid black",color:"black"}} onMouseEnter={handleBlack3}></i>  
                   <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: white2 && "1px solid black",color:"white"}} onMouseEnter={handleWhite2}></i>  
                 </div>
+                <button className="btn rounded-pill mt-3 w-100 buy">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -388,6 +392,7 @@ const handleWhite3 = () =>{
                   <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: orange1 && "1px solid black",color:"orange"}} onMouseEnter={handleOrange1}></i>  
                   <i className="fa-solid fa-circle p-1 rounded-circle" style={{border: white3 && "1px solid black",color:"white"}} onMouseEnter={handleWhite3}></i>  
                 </div>
+                <button className="btn rounded-pill mt-3 w-100 buy">ADD TO CART</button>
               </div>
             </div>
           </div>
