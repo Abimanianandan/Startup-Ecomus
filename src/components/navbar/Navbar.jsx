@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../navbar/Navbar.css"
 import { Link } from "react-router-dom";
+import { cartContext } from "../../App";
 
 const Navbar = () => {
+  const{cart,setCart,heart,setHeart} = useContext(cartContext)
   const [scrolled, setScrolled] = useState(false);
   const [home,setHome] = useState(true);
   const [shop,setShop] = useState(false);
@@ -109,11 +111,18 @@ const Navbar = () => {
               className="d-flex ms-auto gap-3 text-dark"
               style={{ cursor: "pointer" }}
             >
-              <i className="fa-solid fa-magnifying-glass fs-5 icon"></i>
-              <i className="fa-regular fa-user fs-5 icon"></i>
-              <i className="fa-solid fa-down-left-and-up-right-to-center fs-5 icon"></i>
-              <i className="fa-regular fa-heart fs-5 icon"></i>
-              <i className="fa-solid fa-cart-shopping fs-5 icon"></i>
+              <i className="fa-solid fa-magnifying-glass fs-4 icon"></i>
+              <i className="fa-regular fa-user fs-4 icon"></i>
+              <i className="fa-solid fa-down-left-and-up-right-to-center fs-4 icon"></i>
+              <Link to={"/heart"} className="position-relative">  <i className="fa-regular fa-heart fs-4 icon" style={{color:"black"}}>
+              <p className="position-absolute text-white p-1 rounded-circle"
+                 style={{top:"-30%",left:"60%",backgroundColor:"red",fontSize:"12px"}}>{heart}</p>
+                </i> </Link>
+              <Link to={"/cart"} className="position-relative"> <i className="fa-solid fa-cart-shopping fs-4 icon" style={{color:"black"}}>
+                <p className="position-absolute text-white p-1 rounded-circle"
+                 style={{top:"-30%",left:"60%",backgroundColor:"red",fontSize:"12px"}}>{cart}</p>
+                 </i>
+                 </Link>
             </div>
           </div>
         </div>

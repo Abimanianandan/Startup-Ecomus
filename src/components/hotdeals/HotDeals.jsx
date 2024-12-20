@@ -1,9 +1,11 @@
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import '../hotdeals/HotDeals.css'
 import WhatsAppRedirect from '../whatsappredirection/WhatsAppRedirect';
+import { cartContext } from '../../App';
 
 
 const HotDeals = () => {
+  const {heart,setHeart,setHeartItem} = useContext(cartContext)
   const productRef = useRef(null);
   const [rightArrow, setRightArrow] = useState(true);
   const [leftArrow, setLeftArrow] = useState(false);
@@ -183,11 +185,15 @@ const HotDeals = () => {
     setWhite4(false);
   }
 
-  
   const handleBuy=(products)=>{    
     setSelectedProduct(products)        
      setBuy(true) 
       }
+
+  const handleHeart = (item) =>{
+    setHeartItem((prevItem)=> [...prevItem,item]) 
+    setHeart(heart + 1)    
+  }
 
   return(
     <>
@@ -226,14 +232,17 @@ const HotDeals = () => {
             /> }
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon carticon" onClick={()=>handleBuy({name:'Case with MagSafe',price:'$19.99'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}> </i> 
-                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  onClick={()=>handleHeart({
+                    name: "Case with MagSafe",
+                    price: "$19.00",
+                    img: "https://ecomusnext-themesflat.vercel.app/images/products/bark-phone-green.jpg",
+                  })} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
             <div className="card-body text-center">
                <h6 className='card-title'>Case with MagSafe</h6>
                 <p className="card-text">$19.99</p>   
-
                 <div className="circle-colors d-flex justify-content-evenly" style={{cursor:'pointer'}}>
                   <i className="fa-solid fa-circle p-1 rounded-circle blue" style={{border: blue && "1px solid black",color:"rgb(161,161,250)"}} onMouseEnter={handleBlue}></i>  
                   <i className="fa-solid fa-circle p-1 rounded-circle black" style={{border: black && "1px solid black"}} onMouseEnter={handleBlack}></i>  
@@ -272,7 +281,10 @@ const HotDeals = () => {
            }
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'MagSafe 3 Cable',price:'$39.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleHeart({
+                    name: "MagSafe 3 Cable",
+                    price: "$39.00",
+                    img: "https://ecomusnext-themesflat.vercel.app/images/products/cable-black.jpg",})}  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
@@ -327,7 +339,10 @@ const HotDeals = () => {
                 )}
             <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats Studio Buds',price:'$199.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleHeart({
+                    name: "Beats Studio Buds",
+                    price: "$199.00",
+                    img: "https://ecomusnext-themesflat.vercel.app/images/products/headphone-red2.jpg",})}  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
@@ -370,7 +385,10 @@ const HotDeals = () => {
                 )}
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Blue Ocean Band',price:'$9.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon" onClick={()=>handleHeart({
+                    name: "Blue Ocean Band",
+                    price: "$9.00",
+                    img: "https://ecomusnext-themesflat.vercel.app/images/products/albert-white.jpg",})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
@@ -408,7 +426,10 @@ const HotDeals = () => {
             /> }
             <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Beats HeadPhone',price:'$299.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon" onClick={()=>handleHeart({
+                    name: "Beats HeadPhone",
+                    price: "$299.00",
+                    img: "https://tse4.mm.bing.net/th?id=OIP.9eSLzTejcVBWh5qDTnpSuAHaHa&pid=Api&P=0&h=180",})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
@@ -423,8 +444,7 @@ const HotDeals = () => {
                 </div>   
             </div>
           </div>
-        </div>
-        
+        </div>       
         <div className="col-sm-3 col-md-5 col-lg-3">
           <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
             {black5 && <img
@@ -445,7 +465,10 @@ const HotDeals = () => {
          
              <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i className="fa-solid fa-cart-shopping p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleBuy({name:'Power Bank',price:'$199.00'})} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
+                <i className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleHeart({
+                    name: "Power Bank",
+                    price: "$199.00",
+                    img: "https://tse2.mm.bing.net/th?id=OIP.QJSRRLaWeEdbiek9K9q0SAHaHa&pid=Api&P=0&h=180",})}  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-down-left-and-up-right-to-center  ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
                 <i className="fa-solid fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
             </div>
