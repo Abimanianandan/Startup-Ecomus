@@ -160,36 +160,6 @@ const BestSeller = () => {
   const handleBlack3 = () => {
     setBlack3(true);
     setWhite2(false);
-<<<<<<< HEAD
-  };
-  const handleWhite2 = () => {
-    setWhite2(true);
-    setBlack3(false);
-  };
-  const handleBlack4 = () => {
-    setBlack4(true);
-    setOrange1(false);
-    setWhite3(false);
-  };
-  const handleOrange1 = () => {
-    setOrange1(true);
-    setBlack4(false);
-    setWhite3(false);
-  };
-  const handleWhite3 = () => {
-    setWhite3(true);
-    setOrange1(false);
-    setBlack4(false);
-  };
-  const handleCart = (item) => {
-    setCartItem((prevCart) => [...prevCart, item]);
-    setCart(cart + 1);
-  };
-  const handleHeart = (item) =>{
-    setHeartItem((prevItem)=> [...prevItem,item]) 
-    setHeart(heart + 1)    
-  }
-=======
 }
 const handleWhite2 = () =>{
   setWhite2(true);
@@ -214,9 +184,6 @@ const handleBuying=(products)=>{
   setSelectedProduct(products)        
    setBuy(true) 
     }
-
-
->>>>>>> d687bb86dc345d43bad68396340b24f9e6ce88e8
   return (
     <div className="bestseller-main w-100%">
       <h1 className="display-4 display-sm-3 display-md-2 display-lg-1 text-center mt-5">
@@ -255,10 +222,6 @@ const handleBuying=(products)=>{
               <div className="icons-container position-absolute d-flex justify-content-center ms-4">
                 <i
                   className="fa-regular fa-heart ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"
-                  style={{ backgroundColor: "whitesmoke", borderRadius: "5px" }}
-                  onClick={()=>handleHeart({
-                    name: "Beats Studio Buds",
-                    price: "$199.00",
                     img: "https://ecomusnext-themesflat.vercel.app/images/products/headphone-white.jpg",
                   })}
                 ></i>
@@ -534,9 +497,7 @@ const handleBuying=(products)=>{
               </div>
             </div>
           </div>
-
           {/* card 4 */}
-
           <div className="col-sm-3 col-md-5 col-lg-3  d-flex justify-content-center">
             <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
               {white2 && (
