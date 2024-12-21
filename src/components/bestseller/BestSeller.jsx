@@ -161,7 +161,7 @@ const BestSeller = () => {
           <div className="row" style={{ flexWrap: "nowrap", gap: "2px" }}>
             {/* card 1 */}
             <div className="col-sm-3 col-md-5 col-lg-3 d-flex justify-content-center">
-              <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
+              <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative best">
                 {white && (
                   <img
                     src="https://ecomusnext-themesflat.vercel.app/images/products/headphone-white.jpg"
@@ -262,7 +262,7 @@ const BestSeller = () => {
             </div>
             {/* cord 2 */}
             <div className="col-sm-3 col-md-5 col-lg-3 d-flex justify-content-center">
-              <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
+              <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative  best">
                 {blue && (
                   <img
                     src="https://ecomusnext-themesflat.vercel.app/images/products/bark-phone-blue2.jpg"
@@ -401,7 +401,7 @@ const BestSeller = () => {
             </div>
             {/* card 3  */}
             <div className="col-sm-3 col-md-5 col-lg-3 d-flex justify-content-center">
-              <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
+              <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative  best">
                 {white1 && (
                   <img
                     src="https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-white2.jpg"
@@ -484,7 +484,7 @@ const BestSeller = () => {
             {/* card 4 */}
 
             <div className="col-sm-3 col-md-5 col-lg-3  d-flex justify-content-center">
-              <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
+              <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative  best">
                 {white2 && (
                   <img
                     src="https://ecomusnext-themesflat.vercel.app/images/products/wireless-charging-white.jpg"
@@ -575,7 +575,7 @@ const BestSeller = () => {
             </div>
             {/* card 5 */}
             <div className="col-sm-3 col-md-5 col-lg-3  d-flex justify-content-center">
-              <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative">
+              <div className="card shadow p-4 mb-5 bg-body-tertiary rounded position-relative  best">
                 {white3 && (
                   <img
                     src="https://ecomusnext-themesflat.vercel.app/images/products/albert-white2.jpg"
