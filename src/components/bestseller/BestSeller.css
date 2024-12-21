@@ -33,20 +33,26 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:600px) {
     .card{
         border: 1px solid transparent !important;
-    width: 243px !important;
-    height: 288px !important;
+        width: 100% !important;
+        height: 450px !important;
+    }
+    .buy{
+        background-color: black !important;
+        color: white !important;
+        height: auto !important;
+        width: auto !important;
     }
 }
 
-@media only screen and (max-width:375px) {
+/* @media only screen and (max-width:375px) {
     @media only screen and (max-width:768px) {
         .card{
             border: 1px solid transparent !important;
-        width: 100% !important;
-        height: 388px !important;
+            width: 100% !important;
+            height: 388px !important;
         }
         .card img{
             width: 100% !important;
@@ -54,4 +60,4 @@
         }
        
     }
-}
+} */
