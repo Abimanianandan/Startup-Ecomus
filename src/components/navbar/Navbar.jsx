@@ -108,7 +108,7 @@ const Navbar = () => {
               </li>
             </ul>
             <div
-              className="d-flex ms-auto gap-3 text-dark"
+              className="d-flex ms-auto gap-3 text-dark mt-5"
               style={{ cursor: "pointer" }}
             >
               <i className="fa-solid fa-magnifying-glass fs-4 icon"></i>
