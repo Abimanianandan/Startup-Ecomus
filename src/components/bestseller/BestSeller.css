@@ -37,13 +37,13 @@
     .card{
         border: 1px solid transparent !important;
         width: 100% !important;
-        height: 500px !important;
+        height: 450px !important;
     }
-    .best{
+    /* .best{
         border: 1px solid transparent !important;
         width: 100% !important;
         height: 550px !important;
-    }
+    } */
     .buy{
         background-color: black !important;
         color: white !important;
