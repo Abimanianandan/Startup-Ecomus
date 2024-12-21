@@ -17,30 +17,38 @@ const OrderManagement = () => {
       [e.target.name]: e.target.value,
     });
   };
-
   const handleOrder = () => {
-
     const { name, email, product, quantity } = orderDetails;
-
+  
     if (!name || !email || !product || !quantity) {
       alert("Please fill out all fields!");
       return;
     }
-
+  
     const workbook = XLSX.utils.book_new();
     const worksheetData = [
       ["Name", "Email", "Product", "Quantity"],
       [name, email, product, quantity],
     ];
     const worksheet = XLSX.utils.aoa_to_sheet(worksheetData);
-
+  
     XLSX.utils.book_append_sheet(workbook, worksheet, "Orders");
-
-    XLSX.writeFile(workbook, "OrderDetails.xlsx");
-
+  
+    const excelBuffer = XLSX.write(workbook, { bookType: "xlsx", type: "array" });
+    const blob = new Blob([excelBuffer], { type: "application/octet-stream" });
+  
+    const downloadLink = document.createElement("a");
+    const url = URL.createObjectURL(blob);
+    downloadLink.href = url;
+    downloadLink.download = "OrderDetails.xlsx";
+    downloadLink.click();
+  
+    URL.revokeObjectURL(url);
+  
     alert("Order placed and Excel file generated!");
     setOrderDetails({ name: "", email: "", product: "", quantity: "" });
   };
+  
 
   return (
     <div className="order-management-container p-4">

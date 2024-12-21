@@ -48,7 +48,7 @@
 import React, { useState,useRef } from 'react';
 import '../whatsappredirection/WhatsAppRedirect.css';
 
-const WhatsAppRedirect = ({ ProductName, ProductPtPrice,setBuy }) => {
+const WhatsAppRedirect = ({ ProductName, ProductPrice,setBuy }) => {
   const [name, setName] = useState('');
   const [mobile, setMobile] = useState('');
   const [message, setMessage] = useState('');
@@ -56,7 +56,7 @@ const WhatsAppRedirect = ({ ProductName, ProductPtPrice,setBuy }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const whatsappMessage = `Product: ${ProductName}, Price: ${ProductPtPrice}, Name: ${name}, Mobile: ${mobile}, Message: ${message}`;
+    const whatsappMessage = `Product: ${ProductName}, Price: ${ProductPrice}, Name: ${name}, Mobile: ${mobile}, Message: ${message}`;
     const whatsappNumber = '7639495042'; // Updated to your number
     const url = `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank'); // Open WhatsApp chat with pre-filled message
