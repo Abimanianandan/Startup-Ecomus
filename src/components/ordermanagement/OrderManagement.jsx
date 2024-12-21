@@ -26,32 +26,38 @@ const OrderManagement = () => {
       return;
     }
   
-    const workbook = XLSX.utils.book_new();
-    const worksheetData = [
-      ["Name", "Email", "Product", "Quantity"],
-      [name, email, product, quantity],
-    ];
-    const worksheet = XLSX.utils.aoa_to_sheet(worksheetData);
+    try {
+      const workbook = XLSX.utils.book_new();
+      const worksheetData = [
+        ["Name", "Email", "Product", "Quantity"], 
+        [name, email, product, quantity],        
+      ];
+      const worksheet = XLSX.utils.aoa_to_sheet(worksheetData);
   
-    XLSX.utils.book_append_sheet(workbook, worksheet, "Orders");
+      XLSX.utils.book_append_sheet(workbook, worksheet, "Orders");
   
-    const excelBuffer = XLSX.write(workbook, { bookType: "xlsx", type: "array" });
-    const blob = new Blob([excelBuffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
+      const excelBuffer = XLSX.write(workbook, { bookType: "xlsx", type: "array" });
+      const blob = new Blob([excelBuffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
   
-    const link = document.createElement("a");
-    const url = URL.createObjectURL(blob);
-    link.href = url;
-    link.download = "OrderDetails.xlsx";
+      const link = document.createElement("a");
+      const url = URL.createObjectURL(blob);
+      link.href = url;
+      link.download = "OrderDetails.xlsx";
   
-    document.body.appendChild(link);
-    link.click();
+      document.body.appendChild(link);
+      link.click();
   
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
   
-    alert("Order placed and Excel file generated!");
-    setOrderDetails({ name: "", email: "", product: "", quantity: "" });
+      alert("Order placed and Excel file generated!");
+      setOrderDetails({ name: "", email: "", product: "", quantity: "" });
+    } catch (error) {
+      console.error("Error generating Excel file:", error);
+      alert("There was an issue generating the Excel file. Please try again.");
+    }
   };
+  
   
 
   return (
