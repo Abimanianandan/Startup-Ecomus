@@ -255,7 +255,7 @@ const BestSeller = () => {
                       })
                     }
                   >
-                    ADD TO CART
+                    Order Now
                   </button>
                 </div>
               </div>
@@ -394,7 +394,7 @@ const BestSeller = () => {
                     ></i>
                   </div>
                   <button className="btn rounded-pill mt-3 w-100 buy">
-                    ADD TO CART
+                  Order Now
                   </button>
                 </div>
               </div>
@@ -475,7 +475,7 @@ const BestSeller = () => {
                     ></i>
                   </div>
                   <button className="btn  rounded-pill mt-3 w-100 buy">
-                    ADD TO CART
+                  Order Now
                   </button>
                 </div>
               </div>
@@ -568,7 +568,7 @@ const BestSeller = () => {
                     ></i>
                   </div>
                   <button className="btn rounded-pill mt-3 w-100 buy">
-                    ADD TO CART
+                  Order Now
                   </button>
                 </div>
               </div>
@@ -664,7 +664,7 @@ const BestSeller = () => {
                     ></i>
                   </div>
                   <button className="btn rounded-pill mt-3 w-100 buy">
-                    ADD TO CART
+                  Order Now
                   </button>
                 </div>
               </div>
