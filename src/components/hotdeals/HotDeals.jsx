@@ -241,7 +241,6 @@ const HotDeals = () => {
                     price: "$19.99",
                    img: "https://ecomusnext-themesflat.vercel.app/images/products/bark-phone-orange.jpg",
                    })}  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <Link to="/ordermanagement"><i className="fa-regular fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px",color:"black"}}></i></Link>
 
                 <i className="fa-solid fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon" onClick={()=>handleCart({
                     name: "Case with MagSafe",
@@ -299,7 +298,6 @@ const HotDeals = () => {
                      price: "$39.00",
                      img: "https://ecomusnext-themesflat.vercel.app/images/products/cable-black.jpg",
                    })} style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <Link to="/ordermanagement"><i className="fa-regular fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px",color:"black"}}></i></Link>
                 <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleCart({
                     name: "MagSafe 3 Cable",
                     price: "$39.00",
@@ -363,7 +361,6 @@ const HotDeals = () => {
                      price: "$199.00",
                      img: "https://ecomusnext-themesflat.vercel.app/images/products/headphone-red2.jpg",
                    })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <Link to="/ordermanagement"><i className="fa-regular fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px",color:"black"}}></i></Link>
                 <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleCart({
                     name: "Beats Studio Buds",
                     price: "$199.00",
@@ -415,7 +412,6 @@ const HotDeals = () => {
                      price: "$9.00",
                      img: "https://ecomusnext-themesflat.vercel.app/images/products/albert-white.jpg",
                    })}  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <Link to="/ordermanagement"><i className="fa-regular fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px",color:"black"}}></i></Link>
                 <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleCart({
                      name: "Blue Ocean Band",
                      price: "$9.00",
@@ -462,7 +458,6 @@ const HotDeals = () => {
                      price: "$299.00",
                      img: "https://tse4.mm.bing.net/th?id=OIP.9eSLzTejcVBWh5qDTnpSuAHaHa&pid=Api&P=0&h=180",
                    })}   style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <Link to="/ordermanagement"><i className="fa-regular fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px",color:"black"}}></i></Link>
                 <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleCart({
                      name: "Beats HeadPhone",
                      price: "$299.00",
@@ -507,7 +502,6 @@ const HotDeals = () => {
                      price: "$199.00",
                      img: "https://tse2.mm.bing.net/th?id=OIP.QJSRRLaWeEdbiek9K9q0SAHaHa&pid=Api&P=0&h=180",
                    })}  style={{backgroundColor:"whitesmoke", borderRadius:"5px"}}></i>
-                <Link to="/ordermanagement"><i className="fa-regular fa-eye ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded  icon"  style={{backgroundColor:"whitesmoke", borderRadius:"5px",color:"black"}}></i></Link>
                 <i className="fa-solid fa-cart-shopping ms-2 p-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded icon"onClick={()=>handleCart({
                      name: "Power Bank",
                      price: "$199.00",
