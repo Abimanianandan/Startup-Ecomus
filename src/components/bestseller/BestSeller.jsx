@@ -402,7 +402,6 @@ const BestSeller = () => {
                   Order Now
                   </button>
                 </div>
-                <button className="btn rounded-pill mt-3 w-100 buy" onClick={()=>handleBuying({name:'Case with MagSafe',price:'$19.99'})}>ADD TO CART</button>
               </div>
             </div>
             {/* card 3  */}
@@ -489,7 +488,6 @@ const BestSeller = () => {
                   Order Now
                   </button>
                 </div>
-                <button className="btn rounded-pill mt-3 w-100 buy" onClick={()=>handleBuying({name:'Case with MagSafe',price:'$19.99'})}>ADD TO CART</button>
               </div>
             </div>
 
@@ -587,7 +585,6 @@ const BestSeller = () => {
                   Order Now
                   </button>
                 </div>
-                <button className="btn rounded-pill mt-3 w-100 buy" onClick={()=>handleBuying({name:'Case with MagSafe',price:'$19.99'})}>ADD TO CART</button>
               </div>
             </div>
             {/* card 5 */}
@@ -688,7 +685,6 @@ const BestSeller = () => {
                   Order Now
                   </button>
                 </div>
-                <button className="btn rounded-pill mt-3 w-100 buy" onClick={()=>handleBuying({name:'Case with MagSafe',price:'$19.99'})}>ADD TO CART</button>
               </div>
             </div>
           </div>
