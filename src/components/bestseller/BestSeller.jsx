@@ -137,7 +137,7 @@ const BestSeller = () => {
     setBlack4(false);
   };
   const handleBuying = (products) => {
-    setSelectedProduct(products);
+    setSelectedProduct(products);    
     setBuy(true);
   };
 
@@ -250,8 +250,8 @@ const BestSeller = () => {
                     className="btn rounded-pill mt-3 w-100 buy"
                     onClick={() =>
                       handleBuying({
-                        name: "Case with MagSafe",
-                        price: "$19.99",
+                        name: "Beats Studio Buds",
+                        price: "$199.00",
                       })
                     }
                   >
@@ -393,7 +393,12 @@ const BestSeller = () => {
                       onMouseEnter={handleBrown}
                     ></i>
                   </div>
-                  <button className="btn rounded-pill mt-3 w-100 buy">
+                  <button className="btn rounded-pill mt-3 w-100 buy"  onClick={() =>
+                      handleBuying({
+                        name: "Case with MagSafe",
+                        price: "$19.99",
+                      })
+                    }>
                   Order Now
                   </button>
                 </div>
@@ -474,7 +479,12 @@ const BestSeller = () => {
                       onMouseEnter={handleWhite1}
                     ></i>
                   </div>
-                  <button className="btn  rounded-pill mt-3 w-100 buy">
+                  <button className="btn  rounded-pill mt-3 w-100 buy" onClick={() =>
+                      handleBuying({
+                        name: "Smart Watch Series 6",
+                        price: "$299.00",
+                      })}
+                      >
                   Order Now
                   </button>
                 </div>
@@ -567,7 +577,11 @@ const BestSeller = () => {
                       onMouseEnter={handleWhite2}
                     ></i>
                   </div>
-                  <button className="btn rounded-pill mt-3 w-100 buy">
+                  <button className="btn rounded-pill mt-3 w-100 buy"onClick={() =>
+                      handleBuying({
+                        name: "Ultra Thin Labtop",
+                        price: "$999.99",
+                      })} >
                   Order Now
                   </button>
                 </div>
@@ -663,7 +677,11 @@ const BestSeller = () => {
                       onMouseEnter={handleWhite3}
                     ></i>
                   </div>
-                  <button className="btn rounded-pill mt-3 w-100 buy">
+                  <button className="btn rounded-pill mt-3 w-100 buy" onClick={() =>
+                      handleBuying({
+                        name: "Wireless Earbuds",
+                        price: "$149.99",
+                      })}>
                   Order Now
                   </button>
                 </div>

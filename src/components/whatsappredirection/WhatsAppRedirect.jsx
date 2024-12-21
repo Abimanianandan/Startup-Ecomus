@@ -48,20 +48,21 @@
 import React, { useState,useRef } from 'react';
 import '../whatsappredirection/WhatsAppRedirect.css';
 
-const WhatsAppRedirect = ({ ProductName, ProductPtPrice,setBuy }) => {
+const WhatsAppRedirect = ({ ProductName, ProductPrice,setBuy }) => {
   const [name, setName] = useState('');
   const [mobile, setMobile] = useState('');
   const [message, setMessage] = useState('');
   const vanishbutton=useRef(null)  
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    const whatsappMessage = `Product: ${ProductName}, Price: ${ProductPtPrice}, Name: ${name}, Mobile: ${mobile}, Message: ${message}`;
-    const whatsappNumber = '7639495042'; // Updated to your number
+    e.preventDefault();    
+    const whatsappMessage = `Product: ${ProductName}, Price: ${ProductPrice}, Name: ${name}, Mobile: ${mobile}, Message: ${message}`;
+    const whatsappNumber = '9688513997';
     const url = `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
-    window.open(url, '_blank'); // Open WhatsApp chat with pre-filled message
+    window.open(url, '_blank'); 
     if(vanishbutton){
       vanishbutton.current.style.display='none'
+      setBuy(false)
     }
   };
   const handleCancel=()=>{
@@ -73,7 +74,7 @@ const WhatsAppRedirect = ({ ProductName, ProductPtPrice,setBuy }) => {
 
   return (
     <div className="whatsapp-redirect" ref={vanishbutton}>
-    <i class="fa-solid fa-x x-icon"on onClick={handleCancel}></i>
+    <i class="fa-solid fa-x x-icon text-danger"on onClick={handleCancel} style={{cursor:"pointer"}}></i>
       <form className="row g-0 from-container  flex-column" onSubmit={handleSubmit}>
         
       <h3 className='whatsapp-heading  g-3'>Order Via  WatsApp</h3>
