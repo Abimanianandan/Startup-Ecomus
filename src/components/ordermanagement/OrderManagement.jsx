@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import * as XLSX from "xlsx";
+import * as XLSX from "xlsx";
 import '../ordermanagement/OrderManagement.css'
 
 const OrderManagement = () => {
@@ -17,6 +17,7 @@ const OrderManagement = () => {
       [e.target.name]: e.target.value,
     });
   };
+
   const handleOrder = () => {
     const { name, email, product, quantity } = orderDetails;
   
@@ -35,14 +36,17 @@ const OrderManagement = () => {
     XLSX.utils.book_append_sheet(workbook, worksheet, "Orders");
   
     const excelBuffer = XLSX.write(workbook, { bookType: "xlsx", type: "array" });
-    const blob = new Blob([excelBuffer], { type: "application/octet-stream" });
+    const blob = new Blob([excelBuffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
   
-    const downloadLink = document.createElement("a");
+    const link = document.createElement("a");
     const url = URL.createObjectURL(blob);
-    downloadLink.href = url;
-    downloadLink.download = "OrderDetails.xlsx";
-    downloadLink.click();
+    link.href = url;
+    link.download = "OrderDetails.xlsx";
   
+    document.body.appendChild(link);
+    link.click();
+  
+    document.body.removeChild(link);
     URL.revokeObjectURL(url);
   
     alert("Order placed and Excel file generated!");
